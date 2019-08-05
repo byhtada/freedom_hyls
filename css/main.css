@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6, p, span, div {font-family: 'Roboto', sans-serif;}
 
 .bs_table_header {background-color: rgba(255, 126, 42, 0.85);}
 
-
+#wake_up_text, #wake_up_tomorrow {font-size: 12px;}
 .diary_header, .diary_body, .settings_div {
     padding: 15px;
     border-radius: 10px;
@@ -73,9 +73,10 @@ h1, h2, h3, h4, h5, h6, p, span, div {font-family: 'Roboto', sans-serif;}
 .diary_body {margin-top: 20px ;}
 .diary_body_name {margin-top: 0px !important;}
 .marafon_name {margin-bottom: 15px;}
-#user_programm_day, #user_programm_day_mini, #user_programm_day_family, #user_programm_day_time, #user_programm_day_detox_mini, #user_programm_day_ananda, #user_programm_day_10days{ font-size: 24px;  margin-top: 15px; margin-bottom: 10px;
+#user_programm_day, #user_programm_day_mini, #user_programm_day_family, #user_programm_day_time, #user_programm_day_detox_mini, #user_programm_day_ananda, #user_programm_day_10days, #user_programm_day_kaoshiki{
+    font-size: 22px;  margin-top: 15px; margin-bottom: 10px;
     display:flex; flex-direction: row; justify-content: center; align-items: center;}
-#user_current_day_10days, #user_current_day, #user_current_day_mini, #user_current_day_family, #user_current_day_time, #user_current_day_detox_mini, #user_current_day_ananda {margin-left: 5px; margin-right: 5px}
+#user_current_day_kaoshiki, #user_current_day_10days, #user_current_day, #user_current_day_mini, #user_current_day_family, #user_current_day_time, #user_current_day_detox_mini, #user_current_day_ananda {margin-left: 5px; margin-right: 5px}
 .btns_unicorn_padding {
     padding-left:  5px;
     padding-right: 5px;
@@ -136,7 +137,7 @@ h1, h2, h3, h4, h5, h6, p, span, div {font-family: 'Roboto', sans-serif;}
 .db_row_pay_img      {border: 0; width:  130px; }
 .pay_confirm_input   {width:  100%; }
 .btn_orange_style {font-weight: bold; color: whitesmoke}
-.btns_next_material { margin-top: 10px;
+.btns_next_material, .btns_quiz { margin-top: 10px;
 }
 .orange_color            {color: rgb(255, 127, 76)}
 .reg_link            {color: rgb(255, 127, 76)}
@@ -187,7 +188,7 @@ h1, h2, h3, h4, h5, h6, p, span, div {font-family: 'Roboto', sans-serif;}
 }
 
 
-#question_10days_main_reg, #question_10days_main_wait, #question_10days_halfbath, #table_question_detox, #detox_settings, #table_question_therapy, #practise_continue_settings, #table_question_water, #table_question_wake_up {
+#question_kaoshiki_extra,#question_kaoshiki_time,#question_10days_main_reg, #question_10days_main_wait, #question_10days_halfbath, #table_question_detox, #detox_settings, #table_question_therapy, #practise_continue_settings, #table_question_water, #table_question_wake_up {
     margin-top: 15px;
     padding: 15px;
     border-radius: 10px;
