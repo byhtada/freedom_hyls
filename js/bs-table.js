@@ -66,7 +66,7 @@
 		//set classes for table - bootstrap table classes
 		$table.addClass('table table-bordered table-condensed table-hover');
 		//highlight header row of table
-		$table.find('th').parent().addClass('bs_table_header');
+		$table.find('th').parent().addClass('success');
 
 
 		//download wrapper

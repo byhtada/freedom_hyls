@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="test"></p>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var d = new Date();
+        var date_now  = new Date();
+        var timezone =  date_now.getTimezoneOffset();
+
+        var date_now_ms = date_now.getTime() + 60 * 1000 * timezone;
+
+        var d_start = new Date(date_now_ms);
+        d_start.setFullYear(2019,5,23);
+        d_start.setHours(10);
+        d_start.setMinutes(0);
+
+        days    = (d.getTime() - d_start.getTime() ) / 1000 / 60 / 60 / 24;
+        periods = parseInt(days / 7);
+        left = days % 7;
+
+        var next_marathon = 0;
+        if (left <= 2){
+            next_marathon = 7 * periods;
+        } else {
+            next_marathon = 7 * (periods + 1);
+        }
+
+        var final_date = new Date(d_start.getTime() + next_marathon * 24 * 60 * 60 * 1000);
+
+
+        var text = final_date.getDate() + " " + getMonthName(final_date.getMonth());
+
+
+        var block_field_value = 'tn_text_1555922077673';
+        $('[field='+block_field_value+']').text(text);
+
+
+
+
+        function getMonthName(month){
+            var month_name = "января";
+
+            switch(month){
+                case 0:
+                    month_name = "января";
+                    break;
+                case 1:
+                    month_name = "февраля";
+                    break;
+                case 2:
+                    month_name = "марта";
+                    break;
+                case 3:
+                    month_name = "апреля";
+                    break;
+                case 4:
+                    month_name = "мая";
+                    break;
+                case 5:
+                    month_name = "июня";
+                    break;
+                case 6:
+                    month_name = "июля";
+                    break;
+                case 7:
+                    month_name = "августа";
+                    break;
+                case 8:
+                    month_name = "сентября";
+                    break;
+                case 9:
+                    month_name = "октября";
+                    break;
+                case 10:
+                    month_name = "ноября";
+                    break;
+                case 11:
+                    month_name = "декабря";
+                    break;
+
+            }
+            return month_name;
+        }
+    });
+</script>
+
+</body>
+</html>

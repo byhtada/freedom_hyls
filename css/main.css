@@ -17,22 +17,240 @@ html {
     line-height: 1.4;
 }
 
+.btns_materials_switcher{width: 33%;}
+
+td {vertical-align: middle !important;}
+
+.select_courses, .show_course_materials {position: relative; }
+.select_course_prio,  .show_course_prio  {position: absolute; top: 8px; right: 8px; width: 20px; height: 20px; border-radius: 20px; align-content: center}
+
+.courses_save {margin-top: 25px;}
+.page_margin {position: relative; margin-left: 10px; margin-right: 10px; margin-bottom: 50px;}
+.btn_back {position: fixed; bottom: 13px; right: 13px;}
+
+
+.lotos_style{  width: 35px; height: 35px;}
+
+.material_name{ color: black; }
+.material_practise{ position: absolute; top: 11px; right: 5px; width: 15px; height: 15px;}
+
+.div_materials, .div_practise {
+    position: relative;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba(232, 229, 225, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.material_readed    { background-color: rgb(255, 255, 255)}
+.material_unread    { background-color: rgba(56, 181, 38, 0.19)}
+.material_unbuy     { background-color: rgba(56, 181, 38, 0.19)}
+.material_unactive  { background-color: rgba(17, 14, 13, 0.55)}
+
 h1, h2, h3, h4, h5, h6, p, span, div {font-family: 'Roboto', sans-serif;}
+
+.div_practise {height: 60px }
+.practise_name      {position: absolute; top: 12px; left: 10px; font-size: 24px; }
+.practise_switch    {position: absolute; top: 20px; right: 35px;}
+.practise_settings  {position: absolute; top: 17px; right: 70px; width: 25px; height: 25px;}
+.practise_settings_text  {margin-top: 8px; font-size: 12px;}
+
+
+.material-switch > input[type="checkbox"] {
+    display: none;
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative;
+    width: 40px;
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: 16px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.r-tabs {
+    position: relative;
+}
+.r-tabs .r-tabs-nav {
+    border-bottom: 1px solid #ccc;
+}
+.r-tabs .r-tabs-nav .r-tabs-tab {
+    position: relative;
+    top: 1px;
+}
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+    background: #00aadd;
+    margin-bottom: 3px;
+    padding: 10px 12px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.r-tabs .r-tabs-nav .r-tabs-state-active {
+    background-color: #fff;
+    margin-bottom: -1px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+    color: #00aadd;
+    background-color: #fff;
+}
+.r-tabs .r-tabs-panel {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    margin-bottom: 3px;
+}
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+    display: block;
+    padding: 10px;
+    background-color: #00aadd;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 3px;
+}
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+    background-color: #fff;
+    color: #00aadd;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+.weekDays-selector input {
+    display: none!important;
+}
+
+.weekDays-selector input[type=checkbox] + label {
+    display: inline-block;
+    border-radius: 6px;
+    background: #dddddd;
+    height: 40px;
+    width: 30px;
+    margin-right: 3px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.weekDays-selector input[type=checkbox]:checked + label {
+    background: #2AD705;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .text_mini_end {font-size: 18px;}
 
 .recommend_time{font-size: 14px;}
 
 
 .btn_social_practic {color: #46d444;}
+.progress-bar-danger {background-color: #f96c6c !important;}
+.btn-danger {background-color: #f96c6c !important;}
 
+
+#navigation_bar_admin {vertical-align: baseline  !important }
 
 #certificate_divider {height: 2500px;}
 
 .end_marafon_or {margin-top: 10px; margin-bottom: 10px;}
 .certificate_back {position: absolute; top: 0px; left: 0px;}
-#detox_certificate_name, #detox_mini_certificate_name {position: absolute; top: 160px; left: 100px; font-size: 19px; font-weight: bold; width: 400px; font-family: 'Baloo Bhai', cursive;}
+#detox_certificate_name, #detox_mini_certificate_name {position: absolute; top: 420px; left: 508px; font-size: 55px; font-weight: bold; width: 640px; font-family: 'Roboto', cursive; }
+#detox_certificate_progress {position: absolute; top: 755px; left: 1340px; font-size: 35px; font-weight: bold; width: 130px; font-family: 'Roboto', cursive; }
 #family_certificate_name {position: absolute; top: 175px; left: 70px; font-size: 22px; font-weight: bold; width: 460px; font-family: 'Baloo Bhai', cursive;}
-#detox_certificate, #detox_mini_certificate {width: 595px; height: 842px;}
+#detox_certificate, #detox_mini_certificate {width: 1654px; height: 1166px;}
 #family_certificate {width: 595px; height: 842px;}
 
 
@@ -188,7 +406,16 @@ h1, h2, h3, h4, h5, h6, p, span, div {font-family: 'Roboto', sans-serif;}
 }
 
 
-#question_kaoshiki_extra,#question_kaoshiki_time,#question_10days_main_reg, #question_10days_main_wait, #question_10days_halfbath, #table_question_detox, #detox_settings, #table_question_therapy, #practise_continue_settings, #table_question_water, #table_question_wake_up {
+#question_kaoshiki_extra, #question_kaoshiki_time {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff7f7;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#question_10days_main_reg, #question_10days_main_wait, #question_10days_halfbath, #table_question_detox, #detox_settings, #table_question_therapy, #practise_continue_settings, #table_question_water, #table_question_wake_up {
     margin-top: 15px;
     padding: 15px;
     border-radius: 10px;
@@ -261,8 +488,8 @@ textarea {  resize: none;
 #group_modal_body    {height: 400px;}
 #modal_to_group_body, #modal_to_group_body_all {height: 300px;}
 
-.wake_up_string {font-size: 14px;}
-.field_wake_up {width: 30px}
+.wakeup_info {font-size: 14px;}
+.field_wake_up {width: 35px}
 .field_percent {width: 35px}
 
 .modal-body {
@@ -657,7 +884,7 @@ a.reg-link-text {
 
 
 
-.comment_field {position: relative;}
+.comment_field {position: relative; margin-top: 10px;}
 .loader_ball    {position: absolute; right: 5px; top: 5px; height: 45px; width: 45px;}
 .loader_tick    {position: absolute; right: 15px; top: 5px; height: 20px; width: 20px;}
 
