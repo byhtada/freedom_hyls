@@ -1,12 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="ru">
+<html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>HYLS</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=480,  user-scalable=no " />
 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
 
     <link rel="manifest" href="manifest.json">
@@ -14,18 +12,12 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
     <script src="js/jquery-3.2.1.js"></script>
 
 
-    <script                                   src="js/btns-question.js"></script>
-
-
-    <script src="js/jquery.base64.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
+    <script src="node_modules/js-base64/base64.js"></script>
     <link href="js/jquery-ui.css" rel="stylesheet" type="text/css"/>
 
-    <link href="css/animate.min.css" rel="stylesheet">
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -33,1532 +25,1398 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
-    <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
-    <script src="js/bootstrap-dropdownhover.min.js"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-ru_RU.min.js"></script>
 
 
-    <script                 src="js/bs-table.js"></script>
-    <link rel="stylesheet" href="css/bs-table.css" >
-
-    <link rel="stylesheet" href="node_modules/pretty-checkbox/dist/pretty-checkbox.min.css">
-
-
-    <script src="//api.fondy.eu/static_common/v1/checkout/ipsp.js"></script>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap-social.css" >
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/unicorn-btns.css">
-
-    <script                                   src="js/html2canvas.js"></script>
-    <script                                   src="js/canvas2image.js"></script>
+    <script src="node_modules/progressbar.js/dist/progressbar.min.js"></script>
     <script                                   src="js/main.js?v1.84"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css?v1.84">
 
-    <script charset="UTF-8" src="//cdn.sendpulse.com/js/push/8b81e1517994c3b759ff8fd5a1ac3856_1.js" async></script>
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/anypicker@latest/dist/anypicker-all.min.css" />
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/anypicker@latest/dist/anypicker.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/anypicker@latest/dist/i18n/anypicker-i18n.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/timedropper.min.css">
+    <link rel="stylesheet" href="fonts/Sf-SanFrancisco/stylesheet.css">
+    <link rel="stylesheet" href="fonts/_icomoon/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/number_picker.css">
 
-    <script src="js/jquery.responsiveTabs.js" type="text/javascript"></script>
-    <link type="text/css" rel="stylesheet" href="css/responsive-tabs.css" />
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="https://cdn.datedropper.com/get/co8qa9nyxw4fewkvbgh8b3p3gf219wag"></script>
+
 </head>
 
 <body>
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
-<div id="fb-root"></div>
+<div class="wrapper">
+    <input id="date-input" type="text" data-dd-format="d.m.Y" data-dd-lang="ru" data-dd-theme="leaf">
+    <!-- datedropper init -->
+    <script> $('#date-input').dateDropper();
+
+    </script>
+
+    <div id="wrapper_picker" align="center">
 
 
-
-
-<div id="error_500" hidden>
-    <br>
-    <div class="diary_body error_background">
-        <img src="img/reg_foto_logo2.png" class="img-responsive logo_error">
-        <p class="error_text">Упс... Произошла ошибка. Письмо с отчетом уже отправлено нашему техническому специалисту.</p>
-        <p class="error_text">Если в течении суток проблема не решится (отправим вам письмо), дайте нам знать в  <a class="yoga_color" title="Telegram" href="tg://resolve?domain=aashesh">Telegram</a>, <a class="yoga_color" title="Viber" href="viber://add?number=380973143889">Viber</a>
-            или вашему куратору, в сообщении напишите сразу Ваш логин</p>
-    </div>
-</div>
-
-<div id="page_load">
-    <br/>
-    <br/>
-    <br/>
-    <div align="center">
-        <h1 align="center" hidden>Подождите, идет загрузка...</h1>
-        <br/>
-        <br/>
-        <img id="load_logo" src="img/reg_foto_logo2.png" class="img-responsive animated infinite rubberBand">
-    </div>
-
-    <br/>
-
-</div>
-
-<div id="page_login" hidden  >
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-0  col-sm-4"></div>
-            <div class="col-xs-12 col-sm-4">
-
-                <br/>
-                <br/>
-                <br/>
-
-                <h1 align="center" id="text_login_marathon"><span class="yoga_color">Марафон</span> H<span class="yoga_color">Y</span>LS</h1>
-                <h3 align="center" id="text_login_enter">Вход в личный кабинет</h3>
-                <br/>
-
-                <div id="div_reg_other" hidden>
-                    <a id="btn_vk_log_in" href="http://oauth.vk.com/authorize?client_id=6487614&redirect_uri=https://marathon.hyls.ru/&response_type=token&scope=email,offline&v=5.76&state=123456" class="btn btn-block btn-social btn-vk btn-lg">
-                        <span class="fab fa-vk"></span>Через ВКонтакте
-                    </a>
-                    <a id="btn_fb_log_in" href="#"  class="btn btn-block btn-social btn-facebook btn-lg">
-                        <span class="fab fa-facebook-f"></span>Через Facebook
-                    </a>
-
-                    <br>
-                    <h5 align="center">или</h5>
+        <div id="meditation_selector">
+            <div class="meditation_selector_header">Выберите медитацию</div>
+            <div id="wrapper_meditation_selector">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default btn_meditation_selector" data-num="0" id="btn_meditation_selector_0">1ая</button>
+                    <button type="button" class="btn btn-default btn_meditation_selector" data-num="1" id="btn_meditation_selector_1">2ая</button>
+                    <button type="button" class="btn btn-default btn_meditation_selector" data-num="2" id="btn_meditation_selector_2">3яя</button>
+                    <button type="button" class="btn btn-default btn_meditation_selector" data-num="3" id="btn_meditation_selector_3">4ая</button>
                 </div>
+            </div>
+        </div>
+
+        <div id="numbers_selector">
+            <div class="picker_header">Укажите значение</div>
+
+            <div id="number_picker_small" class='ctrl'>
+                <div id='small_decrement' class='ctrl__button ctrl__button--decrement'>&ndash;</div>
+                <div id="small_container" class='ctrl__counter'>
+                    <input  id="small_input" class='ctrl__counter-input' maxlength='10' type='text' value='20'>
+                    <div    id="small_num" class='ctrl__counter-num'>20</div>
+                </div>
+                <div id="small_increment" class='ctrl__button ctrl__button--increment'>+</div>
+            </div>
+
+            <div id="number_picker_big" class='ctrl' style="display: none;">
+                <div id='big_decrement' class='ctrl__button ctrl__button--decrement'>&ndash;</div>
+                <div id="big_container" class='ctrl__counter'>
+                    <input  id="big_input" class='ctrl__counter-input' maxlength='10' type='text' value='2000'>
+                    <div    id="big_num" class='ctrl__counter-num'>2000</div>
+                </div>
+                <div id="big_increment" class='ctrl__button ctrl__button--increment'>+</div>
+            </div>
+
+            <button id="save_number_picker"  type="button" class="btn btn-success" >Сохранить</button>
+
+        </div>
 
 
-                <form>
-                    <div class="form-group">
-                        <label for="login_login" id="text_login_login">Логин</label>
-                        <input type="text" class="form-control" id="login_login" placeholder="">
+        <div>
+            <span id="btn_close_picker"  class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div id="numbers_picker_script">
+        <script>
+            'use strict';
+
+            function ctrls() {
+                var _this = this;
+
+                this.counter = 20;
+                this.els = {
+                    decrement: document.querySelector('#small_decrement'),
+                    counter: {
+                        container: document.querySelector('#small_container'),
+                        num: document.querySelector('#small_num'),
+                        input: document.querySelector('#small_input')
+                    },
+                    increment: document.querySelector('#small_increment')
+                };
+
+                this.decrement = function() {
+                    var counter = _this.getCounter();
+                    var nextCounter = (_this.counter > 0) ? counter - 1 : counter;
+                    _this.setCounter(nextCounter);
+                };
+
+                this.increment = function() {
+                    var counter = _this.getCounter();
+                    console.log(counter);
+                    var nextCounter = (counter < 9999999999) ?  counter + 1 : counter;
+                    _this.setCounter(nextCounter);
+                };
+
+                this.getCounter = function() {
+                    return _this.counter;
+                };
+
+                this.setCounter = function(nextCounter) {
+                    _this.counter = nextCounter;
+                };
+
+                this.debounce = function(callback) {
+                    setTimeout(callback, 100);
+                };
+
+                this.render = function(hideClassName, visibleClassName) {
+                    console.log("render");
+                    _this.els.counter.num.classList.add(hideClassName);
+
+                    setTimeout(function() {
+                        _this.els.counter.num.innerText = _this.getCounter();
+                        _this.els.counter.input.value = _this.getCounter();
+                        _this.els.counter.num.classList.add(visibleClassName);
+                    }, 100);
+
+                    setTimeout(function() {
+                        _this.els.counter.num.classList.remove(hideClassName);
+                        _this.els.counter.num.classList.remove(visibleClassName);
+                    }, 200);
+                };
+
+                this.ready = function() {
+                    console.log("ready");
+                    _this.els.decrement.addEventListener('click', function() {
+                        _this.debounce(function() {
+                            _this.decrement();
+                            _this.render('is-decrement-hide', 'is-decrement-visible');
+                        });
+                    });
+
+                    _this.els.increment.addEventListener('click', function() {
+                        _this.debounce(function() {
+                            _this.increment();
+                            _this.render('is-increment-hide', 'is-increment-visible');
+                        });
+                    });
+
+                    _this.els.counter.input.addEventListener('input', function(e) {
+                        var parseValue = parseInt(e.target.value);
+                        if (!isNaN(parseValue) && parseValue >= 0) {
+                            _this.setCounter(parseValue);
+                            _this.render();
+                        }
+                    });
+
+                    _this.els.counter.input.addEventListener('focus', function(e) {
+                        _this.els.counter.container.classList.add('is-input');
+                    });
+
+                    _this.els.counter.input.addEventListener('blur', function(e) {
+                        _this.els.counter.container.classList.remove('is-input');
+                        _this.render();
+                    });
+                };
+            };
+
+            // init
+            var controls = new ctrls();
+            document.addEventListener('DOMContentLoaded', controls.ready);
+        </script>
+    </div>
+    <div id="numbers_picker_script1">
+        <script>
+            'use strict';
+
+            function ctrls() {
+                var _this = this;
+
+                this.counter = 2000;
+                this.els = {
+                    decrement: document.querySelector('#big_decrement'),
+                    counter: {
+                        container: document.querySelector('#big_container'),
+                        num: document.querySelector('#big_num'),
+                        input: document.querySelector('#big_input')
+                    },
+                    increment: document.querySelector('#big_increment')
+                };
+
+                this.decrement = function() {
+                    var counter = _this.getCounter();
+                    var nextCounter = (_this.counter > 99) ? counter - 100 : counter;
+                    _this.setCounter(nextCounter);
+                };
+
+                this.increment = function() {
+                    var counter = _this.getCounter();
+                    console.log(counter);
+                    var nextCounter = (counter < 9999999999) ?  counter + 100 : counter;
+                    _this.setCounter(nextCounter);
+                };
+
+                this.getCounter = function() {
+                    return _this.counter;
+                };
+
+                this.setCounter = function(nextCounter) {
+                    _this.counter = nextCounter;
+                };
+
+                this.debounce = function(callback) {
+                    setTimeout(callback, 100);
+                };
+
+                this.render = function(hideClassName, visibleClassName) {
+                    console.log("render");
+                    _this.els.counter.num.classList.add(hideClassName);
+
+                    setTimeout(function() {
+                        _this.els.counter.num.innerText = _this.getCounter();
+                        _this.els.counter.input.value = _this.getCounter();
+                        _this.els.counter.num.classList.add(visibleClassName);
+                    }, 100);
+
+                    setTimeout(function() {
+                        _this.els.counter.num.classList.remove(hideClassName);
+                        _this.els.counter.num.classList.remove(visibleClassName);
+                    }, 200);
+                };
+
+                this.ready = function() {
+                    console.log("ready");
+                    _this.els.decrement.addEventListener('click', function() {
+                        _this.debounce(function() {
+                            _this.decrement();
+                            _this.render('is-decrement-hide', 'is-decrement-visible');
+                        });
+                    });
+
+                    _this.els.increment.addEventListener('click', function() {
+                        _this.debounce(function() {
+                            _this.increment();
+                            _this.render('is-increment-hide', 'is-increment-visible');
+                        });
+                    });
+
+                    _this.els.counter.input.addEventListener('input', function(e) {
+                        var parseValue = parseInt(e.target.value);
+                        if (!isNaN(parseValue) && parseValue >= 0) {
+                            _this.setCounter(parseValue);
+                            _this.render();
+                        }
+                    });
+
+                    _this.els.counter.input.addEventListener('focus', function(e) {
+                        _this.els.counter.container.classList.add('is-input');
+                    });
+
+                    _this.els.counter.input.addEventListener('blur', function(e) {
+                        _this.els.counter.container.classList.remove('is-input');
+                        _this.render();
+                    });
+                };
+            };
+
+            // init
+            var controls = new ctrls();
+            document.addEventListener('DOMContentLoaded', controls.ready);
+        </script>
+    </div>
+
+
+
+
+
+    <div id="wrapper_login" hidden>
+
+        <div id="page_welcome" class="pages">
+            <div class="welcome_carousel owl-carousel">
+                <div class="item">
+                    <div class="logo">H<span>Y</span>LS</div>
+                    <div class="logo_img"><img src="./img/logo_img.svg" alt=""></div>
+                    <div class="welcome__header">Добро пожаловать в клуб!</div>
+                    <div class="welcome__text">Очисти и перезагрузи тело и разум за 60 дней. Уникальная программа йога центра AMYWC.
+                        Всего 45 минут в день, и ты здоров и полон сил!</div>
+                </div>
+                <div class="item">
+                    <div class="logo">H<span>Y</span>LS</div>
+                    <div class="logo_img"><img src="./img/logo_img.svg" alt=""></div>
+                    <div class="welcome__header">Добро пожаловать в клуб!</div>
+                    <div class="welcome__text">Очисти и перезагрузи тело и разум за 60 дней. Уникальная программа йога центра AMYWC.
+                        Всего 45 минут в день, и ты здоров и полон сил!</div>
+                </div>
+                <div class="item">
+                    <div class="logo">H<span>Y</span>LS</div>
+                    <div class="logo_img"><img src="./img/logo_img.svg" alt=""></div>
+                    <div class="welcome__header">Добро пожаловать в клуб!</div>
+                    <div class="welcome__text">Очисти и перезагрузи тело и разум за 60 дней. Уникальная программа йога центра AMYWC.
+                        Всего 45 минут в день, и ты здоров и полон сил!</div>
+                </div>
+                <div class="item">
+                    <div class="logo">H<span>Y</span>LS</div>
+                    <div class="logo_img"><img src="./img/logo_img.svg" alt=""></div>
+                    <div class="welcome__header">Добро пожаловать в клуб!</div>
+                    <div class="welcome__text">Очисти и перезагрузи тело и разум за 60 дней. Уникальная программа йога центра AMYWC.
+                        Всего 45 минут в день, и ты здоров и полон сил!</div>
+                </div>
+            </div>
+            <div class="container">
+                <a href="#" class="green_btn">
+                    <span class="green_btn__icon"><img src="./img/log_in.svg" alt=""></span>
+                    <span id="btn_welcome_login" class="green_btn__text">ВХОД</span>
+                </a>
+                <a href="#" class="create_account white_big_btn">СОЗДАТЬ АККАУНТ</a>
+            </div>
+        </div>
+
+        <div id="page_login" hidden>
+            <div class="wrapper_login">
+                <div class="logo">H<span>Y</span>LS</div>
+                <a href="#" class="create_account default_link">СОЗДАТЬ АККАУНТ</a>
+                <div class="login_img"><img src="img/login_img.svg" alt=""></div>
+                <div class="block_material open_materials">
+                    <div class="block_material__header">ВХОД В ЛИЧНЫЙ КАБИНЕТ</div>
+                    <div class="block_material__content">
+                        <input type="text" name="login" class="default_input" id="login" placeholder="Логин">
+                        <input type="password" name="password" class="default_input" id="password" placeholder="Пароль">
                     </div>
-                    <div class="form-group">
-                        <label for="login_password" id="text_login_pass">Пароль</label>
-                        <input type="password" class="form-control" id="login_password" placeholder="">
+                </div>
+            </div>
+
+            <div class="container">
+                <a href="#" class="green_btn"  id="btn_login">
+                    <span class="green_btn__icon"><img src="./img/log_in.svg" alt=""></span>
+                    <span class="green_btn__text">ВХОД</span>
+                </a>
+                <a href="#" class="link_no_border">Я ЗАБЫЛ ПАРОЛЬ</a>
+            </div>
+        </div>
+
+        <div id="page_courses_select" class="pages" hidden >
+            <div class="header_line">
+                <div class="icon__header_line"><span class="icon-layers"></span></div>
+                <div class="text__header_line">Настройка курсов</div>
+            </div>
+            <div class="block_material">
+                <div class="block_material__header">нажмите на курс<br>
+                    чтобы настроить его приоритет</div>
+                <div id="div_initial_courses" class="block_material__content mb-100"></div>
+                <a href="#" id="initial_courses_save" class="green_btn mt-20"><span class="green_btn__text">Готово</span></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="wrapper_main" hidden>
+        <div id="page_progress" hidden class="pages" >
+            <div class="header_img" style="background-image: url(./img/avatar_5.svg)"></div>
+            <div class="default_text_block">
+                <div class="default_text_block__header">Мой прогресс</div>
+            </div>
+
+            <div class="block_wrap">
+                <div class="header_block_wrap">общая статистика</div>
+                <div class="content_block_wrap">
+                    <div class="wrapper_progress_block">
+                        <div class="header_progress_block"><span>Количество дней участия</span><span class=" statistics_common_days_text">128</span></div>
+                        <div class="progress_block_bg">
+                            <div class="progress_block_percent statistics_common_days" style="width: 85%"></div>
+                        </div>
                     </div>
 
-                    <button type="button" id="btn_login"    class="btn btn-success btn-block">Вход</button>
+                    <div class="wrapper_progress_block">
+                        <div class="header_progress_block"><span>Количество открытых материалов</span><span class=" statistics_common_materials_text">55 %</span></div>
+                        <div class="progress_block_bg">
+                            <div class="progress_block_percent statistics_common_materials" style="width: 55%"></div>
+                        </div>
+                    </div>
 
-                </form>
-                <button id="text_btn_forgot" data-toggle="modal" data-target="#modal_forget_pass" type="button" class="btn btn-link btn-block ">забыли пароль?</button>
-                <div class="modal fade" id="modal_forget_pass"    tabindex="-1" role="dialog" aria-labelledby="modal_label_forget_pass">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="modal_label_forget_pass">Восстановить пароль</h4>
-                            </div>
-                            <div class="modal-body" align="center">
-                                <table style="border: 0">
-                                    <tr class="db_row_dialog"><td align="right" valign="middle"><h5 id="text_rec_mail">Ваша почта </h5></td>  <td class="db_row_input_admin"><input type="text"   class="form-control" id="field_forget_email"        placeholder=""></td></tr>
-                                </table>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn_cancel btn btn-default" data-dismiss="modal">Отмена</button>
-                                <button id="btn_forget_pass" type="button" class="btn btn-success">Восстановить</button>
-                            </div>
+                    <div class="wrapper_progress_block">
+                        <div class="header_progress_block"><span>Средняя заполняемость дневника</span><span class=" statistics_common_percents_text">2999</span></div>
+                        <div class="progress_block_bg">
+                            <div class="progress_block_percent statistics_common_percents" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper_progress_block">
+                        <div class="header_progress_block"><span>Количество дней непрерывного участия</span><span class=" statistics_common_days_in_row_text">2999</span></div>
+                        <div class="progress_block_bg">
+                            <div class="progress_block_percent statistics_common_days_in_row" style="width: 85%"></div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="block_wrap">
+                <div class="header_block_wrap">недельная статистика</div>
+                <div class="content_block_wrap">
+
+
+                    <div class="wrapper_progress_block">
+                        <div class="header_progress_block"><span>Средняя заполняемость дневника</span><span class=" statistics_week_percents_text">2999</span></div>
+                        <div class="progress_block_bg">
+                            <div class="progress_block_percent statistics_week_percents" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper_progress_block">
+                        <div class="header_progress_block"><span>Количество дней непрерывного участия</span><span class=" statistics_week_days_in_row_text">2999</span></div>
+                        <div class="progress_block_bg">
+                            <div class="progress_block_percent statistics_week_days_in_row" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--
+               <div class="block_wrap">
+                <div class="header_block_wrap">открытые достижения</div>
+                <div class="content_block_wrap">
+                    <div class="sledding">
+                        <a href="#" class="one_sledding">
+          <span class="img_sledding"><img src="img/sledding_1.svg" alt="">
+          <span class="sticker_new_sledding">NEW!</span>
+          <span class="category_sledding">Детокс</span>
+          </span>
+
+                            <span class="name_sledding">Познавший чистоту бытия</span>
+                        </a><a href="#" class="one_sledding">
+          <span class="img_sledding"><img src="img/sledding_1.svg" alt="">
+          <span class="sticker_new_sledding">NEW!</span>
+          <span class="category_sledding">Детокс</span>
+          </span>
+
+                        <span class="name_sledding">Познавший чистоту бытия</span>
+                    </a><a href="#" class="one_sledding">
+          <span class="img_sledding"><img src="img/sledding_1.svg" alt="">
+          <span class="sticker_new_sledding">NEW!</span>
+          <span class="category_sledding">Детокс</span>
+          </span>
+
+                        <span class="name_sledding">Познавший чистоту бытия</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="block_wrap">
+                <div class="header_block_wrap">будущие достижения</div>
+                <div class="dop_header_block_wrap">КЛИКНИ НА ИКОНКУ ЧТОБЫ ПОСМОТРЕТЬ ПРОГРЕСС</div>
+                <div class="content_block_wrap">
+                    <div class="sledding">
+                        <a href="#" class="one_sledding" data-target="#popup_progress" data-modal="modal">
+          <span class="img_sledding"><img src="img/sledding_1.svg" alt="">
+          <span class="sticker_new_sledding">NEW!</span>
+          <span class="category_sledding">Детокс</span>
+          </span>
+
+                            <span class="name_sledding">Познавший чистоту бытия</span>
+                        </a>
+                        <a href="#" class="one_sledding" data-target="#popup_progress" data-modal="modal">
+          <span class="img_sledding"><img src="img/sledding_1.svg" alt="">
+          <span class="sticker_new_sledding">NEW!</span>
+          <span class="category_sledding">Детокс</span>
+          </span>
+
+                            <span class="name_sledding">Познавший чистоту бытия</span>
+                        </a><a href="#" class="one_sledding" data-target="#popup_progress" data-modal="modal">
+          <span class="img_sledding"><img src="img/sledding_1.svg" alt="">
+          <span class="sticker_new_sledding">NEW!</span>
+          <span class="category_sledding">Детокс</span>
+          </span>
+
+                        <span class="name_sledding">Познавший чистоту бытия</span>
+                    </a><a href="#" class="one_sledding" data-target="#popup_progress" data-modal="modal">
+          <span class="img_sledding"><img src="img/sledding_1.svg" alt="">
+          <span class="sticker_new_sledding">NEW!</span>
+          <span class="category_sledding">Детокс</span>
+          </span>
+
+                        <span class="name_sledding">Познавший чистоту бытия</span>
+                    </a><a href="#" class="one_sledding" data-target="#popup_progress" data-modal="modal">
+          <span class="img_sledding"><img src="img/sledding_1.svg" alt="">
+          <span class="sticker_new_sledding">NEW!</span>
+          <span class="category_sledding">Детокс</span>
+          </span>
+
+                        <span class="name_sledding">Познавший чистоту бытия</span>
+                    </a><a href="#" class="one_sledding" data-target="#popup_progress" data-modal="modal">
+          <span class="img_sledding"><img src="img/sledding_1.svg" alt="">
+          <span class="sticker_new_sledding">NEW!</span>
+          <span class="category_sledding">Детокс</span>
+          </span>
+
+                        <span class="name_sledding">Познавший чистоту бытия</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="popup_progress" class="wrapper_popup wrapper_popup_progress">
+                <div class="popup_progress_avatar"><img src="img/avatar_6.svg" alt=""></div>
+                <div class="popup_progress_name">Медитация <br>Сияние чистого разума</div>
+                <div class="wrapper_progress_block">
+                    <div class="header_progress_block"><span>Изучить все материалы</span><span>56 из 128</span></div>
+                    <div class="progress_block_bg">
+                        <div class="progress_block_percent" style="width: 35%"></div>
+                    </div>
+                </div>
+                <div class="wrapper_progress_block">
+                    <div class="header_progress_block"><span>30 дней непрерывного участия</span><span>15</span></div>
+                    <div class="progress_block_bg">
+                        <div class="progress_block_percent" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div class="wrapper_progress_block">
+                    <div class="header_progress_block"><span>1000 минут практики</span><span>335</span></div>
+                    <div class="progress_block_bg">
+                        <div class="progress_block_percent" style="width: 33.5%"></div>
+                    </div>
+                </div>
+
+                <a href="#" class="close_popup"><span class="icon-x"></span></a>
+            </div>
+            -->
+
+        </div>
+
+        <div id="page_courses" hidden class="pages" >
+            <div class="tab">
+                <a href="#" class="tab_link active" data-target="#courses" data-plugin="tabs">Курсы</a>
+                <a href="#" class="tab_link" data-target="#material" data-plugin="tabs">Материалы</a>
+            </div>
+            <div class="tab_content">
+                <div class="courses active" id="courses">
+                    <div  class="block_material mt-20">
+                        <div id="courses_active" class="block_material__content ">
+                            <a class="one_material with_progress" href="#">
+                                <div class="one_material__img"><img src="./img/kurs_13.png" alt=""></div>
+                                <div class="one_material__content">
+                                    <div class="one_material__name">Детокс</div>
+                                    <div class="one_material__text">Токсины и детокс. Питание
+                                        без перекусов и переедания. 30 дней.</div>
+                                    <div class="one_material__progress">
+                                        <div class="one_material__progress-bg"></div>
+                                        <div class="one_material__progress-percent" style="width: 30%;"></div>
+                                    </div>
+                                </div>
+                                <div class="one_material__sticker number">КУРС</div>
+                                <div class="one_material__sticker right_left check"><span class="icon-check"></span></div>
+                            </a>
+                            <a class="one_material with_progress" href="#">
+                                <div class="one_material__img"><img src="./img/kurs_14.png" alt=""></div>
+                                <div class="one_material__content">
+                                    <div class="one_material__name">Медитация</div>
+                                    <div class="one_material__text">Медитация для чайников: как начать,
+                                        что делать — и почему не всем это нужно</div>
+                                    <div class="one_material__progress">
+                                        <div class="one_material__progress-bg"></div>
+                                        <div class="one_material__progress-percent" style="width: 0;"></div>
+                                    </div>
+                                </div>
+                                <div class="one_material__sticker number">КУРС</div>
+                                <div class="one_material__sticker right_left percent">34%</div>
+                            </a>
+                            <a class="one_material with_progress triple" href="#">
+                                <div class="one_material__img"><img src="./img/kurs_15.png" alt=""></div>
+                                <div class="one_material__content">
+                                    <div class="one_material__name">Асаны</div>
+                                    <div class="one_material__text">Какие асаны в йоге выбрать именно
+                                        вам и как правильно их выполнять.</div>
+                                    <div class="one_material__progress">
+                                        <div class="one_material__progress-bg"></div>
+                                        <div class="one_material__progress-percent" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <div class="one_material__sticker number">3 КУРСА</div>
+                                <div class="one_material__sticker right_left check"><span class="icon-check"></span></div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <a href="#" id="btn_setting_course" class="setting_btn"><span class="icon-settings"></span><span>НАСТРОИТЬ КУРСЫ</span></a>
+
+
+                    <div  id="courses_no_active" class="block_material">
+                        <div class="block_material__header">ТАКЖЕ ДОСТУПНЫЕ МНЕ</div>
+                        <div  class="block_material__content ">
+                            <a class="one_material with_progress" href="#">
+                                <div class="one_material__img"><img src="./img/kurs_13.png" alt=""></div>
+                                <div class="one_material__content">
+                                    <div class="one_material__name">Детокс</div>
+                                    <div class="one_material__text">Токсины и детокс. Питание
+                                        без перекусов и переедания. 30 дней.</div>
+                                    <div class="one_material__progress">
+                                        <div class="one_material__progress-bg"></div>
+                                        <div class="one_material__progress-percent" style="width: 30%;"></div>
+                                    </div>
+                                </div>
+                                <div class="one_material__sticker number">КУРС</div>
+                            </a>
+                            <a class="one_material with_progress" href="#">
+                                <div class="one_material__img"><img src="./img/kurs_14.png" alt=""></div>
+                                <div class="one_material__content">
+                                    <div class="one_material__name">Медитация</div>
+                                    <div class="one_material__text">Медитация для чайников: как начать,
+                                        что делать — и почему не всем это нужно</div>
+                                    <div class="one_material__progress">
+                                        <div class="one_material__progress-bg"></div>
+                                        <div class="one_material__progress-percent" style="width: 0;"></div>
+                                    </div>
+                                </div>
+                                <div class="one_material__sticker number">КУРС</div>
+                            </a>
+                            <a class="one_material with_progress" href="#">
+                                <div class="one_material__img"><img src="./img/kurs_15.png" alt=""></div>
+                                <div class="one_material__content">
+                                    <div class="one_material__name">Асаны</div>
+                                    <div class="one_material__text">Какие асаны в йоге выбрать именно
+                                        вам и как правильно их выполнять.</div>
+                                    <div class="one_material__progress">
+                                        <div class="one_material__progress-bg"></div>
+                                        <div class="one_material__progress-percent" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <div class="one_material__sticker number">КУРС</div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="material" id="material">
+                  <!--  <a href="#" class="lotos_btn_success"><img src="./img/meditation-svgrepo-com-white.svg" alt=""><span>Ура! Добавлены 25 новых материалов.</span></a>
+                    -->
+
+                    <div id="list_materials_active" class="block_material open_materials">
+                        <div class="block_material__header">открытые материалы</div>
+                        <div class="block_material__content">
+                            <a class="one_material" href="#">
+                                <div class="one_material__img"><img src="./img/kurs_1.png" alt=""></div>
+                                <div class="one_material__name">Базовый комплекс асан</div>
+                                <div class="one_material__sticker category">ДЕТОКС</div>
+                                <div class="one_material__sticker right_left check"><span class="icon-check"></span></div>
+                            </a>
+                            <a class="one_material" href="#">
+                                <div class="one_material__img"><img src="./img/kurs_2.png" alt=""></div>
+                                <div class="one_material__name">Комплекс йоги для расслабления тела</div>
+                                <div class="one_material__sticker category">МЕДИТАЦИЯ</div>
+                                <div class="one_material__sticker right_left check"><span class="icon-check"></span></div>
+                            </a>
+                            <a class="one_material" href="#">
+                                <div class="one_material__img"><img src="./img/kurs_2.png" alt=""></div>
+                                <div class="one_material__name">Комплекс йоги для расслабления тела</div>
+                                <div class="one_material__sticker category">ПИТАНИЕ</div>
+                                <div class="one_material__sticker right_left check"><span class="icon-check"></span></div>
+                            </a>
+                            <a class="one_material" href="#">
+                                <div class="one_material__img"><img src="./img/kurs_2.png" alt=""></div>
+                                <div class="one_material__name">Комплекс йоги для расслабления тела</div>
+                                <div class="one_material__sticker category">АСАНЫ</div>
+                                <div class="one_material__sticker right_left check"><span class="icon-check"></span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="list_materials_no_active" class="block_material open_random_material">
+                        <div class="block_material__header">открыть случайный материал</div>
+                        <div class="block_material__content">
+                            <a class="one_material" href="#">
+                                <div class="one_material__img"><img src="./img/kurs_3.png" alt=""></div>
+                                <div class="one_material__name">Время медитации</div>
+                                <div class="one_material__sticker red"><img src="./img/lotos_white.svg" alt=""></div>
+                            </a>
+                            <a class="one_material" href="#">
+                                <div class="one_material__img"><img src="./img/kurs_4.png" alt=""></div>
+                                <div class="one_material__name">Личная мантра в асанах</div>
+                                <div class="one_material__sticker red"><img src="./img/lotos_white.svg" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div class="block_material seen_material">
+                        <div class="block_material__header">Скоро!</div>
+                        <div class="block_material__content">
+                            <a class="one_material" href="#">
+                                <div class="one_material__img"><img src="./img/kurs_5.png" alt=""></div>
+                                <div class="one_material__name">Положение языка </div>
+                                <div class="one_material__sticker gray"><img src="./img/open-padlock.svg" alt=""></div>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+        <div id="page_courses_inside" hidden class="pages" >
+            <a   id="btn_back_to_courses" href="#" class="back"><span class="icon-arrow-left"></span><span>Назад</span></a>
+            <div id="course_inside_img"   class="header_img" style="background-image: url(./img/avatar.svg)"></div>
+           <!-- <a href="#" class="lotos_btn"><img src="./img/meditation-svgrepo-com.svg" alt=""><span>Вам доступны 3 лотоса. Используй это!</span></a> -->
+
+            <div class="default_text_block">
+                <div id="course_inside_text" class="default_text_block__header">Медитация</div>
+                <div id="course_inside_desc" class="default_text_block__text">Медитативные методы основаны на управлении функциями психики с помощью концентрации внимания (пассивная медитация) или воли (активная медитация). Отличаются не только методы, но и способы медитаций.</div>
+            </div>
+            <div  id="div_course_materials_open" class="block_material open_materials">
+                <div id="courses_divider_header" class="block_material__header">открытые материалы</div>
+                <div id="list_course_materials_open" class="block_material__content">
+                    <a class="one_material" href="#">
+                        <div class="one_material__img"><img src="./img/kurs_1.png" alt=""></div>
+                        <div class="one_material__name">Базовый комплекс асан</div>
+                    </a>
+
+                </div>
+            </div>
+            <!-- <a href="#" class="setting_btn"><span class="icon-settings"></span><span>НАСТРОИТЬ ПРАКТИКУ</span></a> -->
+
+            <div  id="list_course_materials_available" class="block_material open_random_material">
+
+                <div   class="block_material__content">
+                    <a class="one_material" href="#">
+                        <div class="one_material__img"><img src="./img/kurs_3.png" alt=""></div>
+                        <div class="one_material__name">Время медитации</div>
+                        <div class="one_material__sticker red"><img src="./img/lotos_white.svg" alt=""></div>
+                    </a>
+                </div>
+            </div>
+            <div  id="list_course_materials_closed" class="block_material seen_material">
+                <div class="block_material__header">закрытые, изучите все доступные</div>
+                <div  class="block_material__content">
+                    <a class="one_material" href="#">
+                        <div class="one_material__img"><img src="./img/kurs_5.png" alt=""></div>
+                        <div class="one_material__name">Положение языка </div>
+                        <div class="one_material__sticker gray"><img src="./img/open-padlock.svg" alt=""></div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="page_practise_settings" hidden class="pages">
+            <div class="header_line">
+                <div class="icon__header_line"><span class="icon-settings"></span></div>
+                <div id="practise_settings_header" class="text__header_line">Медитация — Настройка практики</div>
+            </div>
+
+            <div id="div_field_activate">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="default_text_block__header" align="center">Активировать практику?</div>
+
+                <br/>
+                <a data-answer="no"  href="#" class="question_practise_activate red_btn mt-20"><span class="red_btn__text">Нет</span></a>
+                <a data-answer="yes" href="#" class="question_practise_activate green_btn mt-20"><span class="green_btn__text">Да</span></a>
+
+
+            </div>
+
+            <div id="div_field_settings" class="default_wrapper">
 
                 <!--
-                <br/>
-                <br/>
-                <button id="btn_reg_other" type="button" class="btn btn-link btn-block "><p class="reg_link">альтернативный вариант</p> </button>
-                -->
+                <div class="form_group checkbox not_wrap">
+                    <input type="checkbox" name="meditation" id="meditation">
+                    <label for="meditation">Практика включена</label>
+                </div> -->
 
+                <div id="settings_numbers" class="settings_practise_div" hidden >
+                    <div class="header_block_wrap mt-40 mb-0">НАСТРОЙКА ВРЕМЕНИ ПРАКТИКИ</div>
 
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_numbers_start">Базовое время практики (в минутах)?</label>
+                        <input type="text" name="count" id="field_settings_numbers_start"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                    </div>
 
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_numbers_finish">Целевое время практики (в минутах)?</label>
+                        <input type="text" name="count" id="field_settings_numbers_finish" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                    </div>
 
-                <div class="modal fade" id="modal_register_self"    tabindex="-1" role="dialog" aria-labelledby="modal_label_register_self">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="modal_label_register_self">Регистрация</h4>
-                            </div>
-                            <div class="modal-body" align="center">
-                                <div id="reg_alert" hidden class="alert alert-danger e" role="alert">
-                                    <strong>Внимание!</strong> Заполните обязательные поля:<br/>
-                                    <span hidden id="reg_hand_error_phone">- Поле телефон должно быть заполнено<br/></span>
-                                    <span hidden id="reg_hand_error_email">- В поле E-mail должен быть Ваш почтовый адрес<br/></span>
-                                    <span hidden id="reg_hand_error_password">- Поле пароль должно содержать более 4х символов</span>
-                                </div>
-
-                                <table style="border: 0">
-                                    <tr class="db_row_dialog"><td align="right" valign="middle"><h5>Ваше имя</h5></td>                 <td class="db_row_input_admin"><input type="text"   class="form-control" id="field_user_reg_name"         placeholder=""></td></tr>
-                                    <tr class="db_row_dialog"><td align="right" valign="middle"><h5>E-mail </h5></td>                  <td class="db_row_input_admin"><input type="text"   class="form-control" id="field_user_reg_email"        placeholder=""></td></tr>
-                                    <tr class="db_row_dialog"><td align="right" valign="middle"><h5>Телефон (будет логином)</h5></td>  <td class="db_row_input_admin"><input type="text"   class="form-control" id="field_user_reg_phone"        placeholder=""></td></tr>
-                                    <tr class="db_row_dialog"><td align="right" valign="middle"><h5>Пароль</h5></td>                   <td class="db_row_input_admin"><input type="text"   class="form-control" id="field_user_reg_password"     placeholder=""></td></tr>
-
-                                </table>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                                <button id="btn_register_self" type="button" class="btn btn-success">Зарегистрироваться</button>
-                            </div>
-                        </div>
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_numbers_step">Комфортный дневшной шаг увеличения (в минутах)?</label>
+                        <input type="text" name="count" id="field_settings_numbers_step"   oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
                     </div>
                 </div>
 
-            </div>
-            <div class="col-xs-0  col-sm-4"></div>
-
-        </div>
-    </div>
-</div>
-
-
-
-<div id="page_main" hidden>
-
-    <div id="marathon_wait" class="row page_margin" hidden>
-        <br/>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3" align="center">
-            <div id="marathon_wait_text" class="reg-header h1" align="center"></div>
-
-            <img id="wait_logo" src="img/reg_foto_logo2.png" class="img-responsive img_reg" />
-            <div id="hidden_info_wait" hidden>
-                <button id="btn_login_exit" type="button" class="btn btn-link">
-                    <span id="user_wait_id_2"></span>
-                </button>
-
-                <!--   <button id="btn_send_payment" type="button" class="btn btn-link">send_payment</button> -->
-            </div>
-
-            <div class="progress">
-                <div class="progress-bar progress-bar-success progress-bar-striped active"
-                     role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                    <span class="sr-only"></span>
-                </div>
-            </div>
-
-
-            <br/>
-            <br/>
-
-            <div id="freedom_select_practise_div" >
-
-                <h3 align="center">
-                    Выберите курсы
-                </h3>
-
-                <div id="all_curses"></div>
-
-                <button  type="button" class="courses_save   btn btn-success btn-block">Сохранить</button>
-
-            </div>
-        </div>
-    </div>
-
-    <div id="marathon_coming"  hidden>
-        <nav class="navbar navbar-default" id="nav_bar">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button id="btn_navbar_menu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation_bar_user" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand black_color nav-link-user" name="nav_user_header"  href="#"><b>H<span class="yoga_color">Y</span>LS</b></a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navigation_bar_user">
-                    <ul class="nav navbar-nav">
-
-                        <li class="nav-item">
-                            <a class="nav-link-user" name="nav_user_diary"  id="text_actionbar_diary" href="#">Дневник</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-user" name="nav_user_courses"     id="text_actionbar_materials" href="#">Курсы</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-user" name="nav_user_practises"    id="text_actionbar_recipes" href="#">Практики</a>
-                        </li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- <li  id="nav_bonus_mini" class="nav-item">
-                             <a id="text_actionbar_bonus" class="nav-link-user" name="nav_user_bonus"   href="#">Мои бонусы</a>
-                         </li> -->
-                         <li class="nav-item">
-                             <a id="text_actionbar_support" class="nav-link-user" name="nav_user_support"   href="#">Поддержать HYLS</a>
-                         </li>
-                         <li  id='nav_faq' class="nav-item">
-                             <a id="text_actionbar_faq" href="https://hyls.me/help" target="_blank" name="nav_faq_mini">FAQ</a>
-                         </li>
-
-
-                         <li><a id="btn_user_exit" href="#" hidden>Выход</a></li>
-                     </ul>
-                 </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3" align="center">
-
-                <div id="page_diary" class="page_margin">
-                    <div id="alert_detox_read_intro"        class="alert alert-warning alert-dismissible" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <p id="text_alert_hello"><strong>Приветствуем!</strong> Прочитайте как проходит участие в марафоне <a id="link_intro_freedom" href="https://hyls.ru/hello" target="_blank">здесь</a>.</p>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <div class="diary_header">
-                                <h4 class="text_target" align="center">#hyls_новости</h4>
-                                <p id="news_text">Новость HYLS</p>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-6">
-                            <div class="diary_header">
-                            <h4 id="user_current_day" align="center">День Х (сегодня)</h4>
-                                <div id="day_progress"></div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="diary_body">
-                        <h3 class="diary_body_name">Дневник</h3>
-
-                        <table class="table  table-hover">
-                            <thead>
-                            <tr class="db_row_dialog">
-                                <td><h4 align="center"><b id="text_diary_practise">Практика</b></h4></td>
-                                <td><h4 align="center"><b id="text_diary_complete">Сделал</b></h4></td>
-                            </tr>
-                            </thead>
-
-                            <tbody id="diary_body">
-
-
-                            <tr id="row_meditation" class="diary_rows db_row_dialog">
-                                <td>Медитация</td>
-
-                                <td class="db_row_input row">
-                                    <h6 align="center" id="field_meditation_plan"></h6>
-                                    <input type="text"   class="practise_meditation form-control" id="field_meditation_fact_1" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
-                                    <input type="text"   class="practise_meditation form-control" id="field_meditation_fact_2" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
-                                    <input type="text"   class="practise_meditation form-control" id="field_meditation_fact_3" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
-                                    <input type="text"   class="practise_meditation form-control" id="field_meditation_fact_4" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
-                                </td>
-                            </tr>
-
-                            <tr id="row_kaoshiki"   class="diary_rows db_row_dialog">
-                                <td valign="middle">Каошики</td>
-                                <td valign="middle" class="db_row_input">
-                                    <h6 align="center" id="field_kaoshiki_plan"></h6>
-                                    <input type="text" class="form-control"  id="field_kaoshiki_fact" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"></td>
-                            </tr>
-
-                            <tr id="row_tongue_clean"   class="diary_rows db_row_dialog">
-                                <td valign="middle">Чистка языка</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_tongue_clean_0"  class="sp_notify_prompt" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_tongue_clean_1"  class="sp_notify_prompt" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_wakeup" class="diary_rows db_row_dialog">
-                                <td valign="middle">
-                                    Ранние подъемы <br/>
-                                    <span id="wakeup_today"    class="wakeup_info"></span><br/>
-                                    <span id="wakeup_tomorrow" class="wakeup_info"></span>
-                                </td>
-
-                                <td valign="middle" class="db_row_input" id="wakeup_fact_div">
-                                    <h6 align="center"  id="field_wakeup_plan" ></h6>
-                                    <p>
-                                        <input type="text" class="field_wake_up" id="field_wake_up_fact_hour"    oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" placeholder="чч">
-                                        <span>:</span>
-                                        <input type="text" class="field_wake_up" id="field_wake_up_fact_minute"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" placeholder="мм">
-                                    </p>
-                                </td>
-                            </tr>
-
-                            <tr id="row_asana"      class="diary_rows db_row_dialog">
-                                <td valign="middle">Асаны</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_asana"  class="day_practises_cb sp_notify_prompt" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_halfbath"   class="diary_rows db_row_dialog">
-                                <td valign="middle">Полуванна</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_halfbath_fact" class="day_practises_cb" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-
-                            <tr id="row_no_snacking"      class="diary_rows db_row_dialog">
-                                <td valign="middle">Без перекусов и переедания</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_no_snacking"  class="day_practises_cb sp_notify_prompt" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr id="row_water" class="diary_rows db_row_dialog">
-                                <td valign="middle">Питьё воды</td>
-
-                                <td class="db_row_input">
-                                    <h6 align="center" id="field_water_plan"></h6>
-                                    <input type="text" class="form-control" id="field_water_fact"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"></td>
-                            </tr>
-
-                            <tr id="row_no_sugar"      class="diary_rows db_row_dialog">
-                                <td valign="middle">Сахар уходи!</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_no_sugar"  class="day_practises_cb sp_notify_prompt" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_no_fries"      class="diary_rows db_row_dialog">
-                                <td valign="middle">Без жаренного</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_no_fries"  class="day_practises_cb sp_notify_prompt" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_yoda_diet"      class="diary_rows db_row_dialog">
-                                <td valign="middle">Йоговская диета</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_yoda_diet"  class="day_practises_cb sp_notify_prompt" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_no_coffe"      class="diary_rows db_row_dialog">
-                                <td valign="middle">Без кофеина</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_no_coffe"  class="day_practises_cb sp_notify_prompt" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-
-                            <tr id="row_ahimsa" class="diary_rows db_row_dialog">
-                                <td valign="middle">Ахимса</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_ahimsa" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_satya" class="diary_rows db_row_dialog">
-                                <td valign="middle">Сатья</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_satya" class="day_practises_cb "  />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_asteya" class="diary_rows db_row_dialog">
-                                <td valign="middle">Астея</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_asteya" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_brahma" class="diary_rows db_row_dialog">
-                                <td valign="middle">Брахмачарья</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_brahma" class="day_practises_cb "  />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_aparigraha" class="diary_rows db_row_dialog">
-                                <td valign="middle">Апариграха</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_aparigraha" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_shaocha" class="diary_rows db_row_dialog">
-                                <td valign="middle">Шауча</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_shaocha" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_santosha" class="diary_rows db_row_dialog">
-                                <td valign="middle">Сантоша</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_santosha" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_tapah" class="diary_rows db_row_dialog">
-                                <td valign="middle">Тапах</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_tapah" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_svadhyaya" class="diary_rows db_row_dialog">
-                                <td valign="middle">Свадхья</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_svadhya" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_ishvara" class="diary_rows db_row_dialog">
-                                <td valign="middle">Ишвара пранидхана</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_ishvara" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-
-
-                            <tr id="row_gratitude" class="diary_rows db_row_dialog">
-                                <td valign="middle">Сила благодарности</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_gratitude" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr id="row_value" class="diary_rows db_row_dialog">
-                                <td valign="middle">Определение ценностей</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_value" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr id="row_square" class="diary_rows db_row_dialog">
-                                <td valign="middle">4 квадрата личности</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_square" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr id="row_targets" class="diary_rows db_row_dialog">
-                                <td valign="middle">Цели на год</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_targets" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr id="row_prioritets" class="diary_rows db_row_dialog">
-                                <td valign="middle">Расстановка приоритетов</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_prioritets" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr id="row_moments" class="diary_rows db_row_dialog">
-                                <td valign="middle">Лучшие моменты в жизни</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_moments" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr id="row_therapy" class="diary_rows db_row_dialog">
-                                <td valign="middle">Натуральные терапии</td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_therapy" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr id="row_vegetarian" class="diary_rows db_row_dialog">
-                                <td valign="middle" id="row_vegetarian_text"></td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_vegetarian" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr id="row_yoga_diet" class="diary_rows db_row_dialog">
-                                <td valign="middle" id="row_yoga_diet_text"></td>
-                                <td class="db_row_input text-center">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_yoga_diet" class="day_practises_cb " />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-
-                            </tbody>
-                        </table>
-
-                        <div class="modal fade" id="modal_social_practic"    tabindex="-1" role="dialog" aria-labelledby="modal_label_social_practic">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="modal_label_social_practic">Подробности задания</h4>
-                                    </div>
-                                    <div class="modal-body" align="left">
-                                        <p id="social_practic_description"></p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">ОК</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="modal_hyls_report"    tabindex="-1" role="dialog" aria-labelledby="modal_label_hyls_report">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="modal_label_hyls_report">Подробности задания</h4>
-                                    </div>
-                                    <div class="modal-body" align="left">
-                                        <p id="hyls_report_description"></p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">ОК</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="comment_field">
-                            <textarea  id="field_day_comment" class="form-control" placeholder="Здесь Вы можете оставлять свои заметки о прошедшем дне Программы"></textarea>
-
-                            <img class="comment_loader_ball_detox loader_ball"    hidden src="img/load_comment.gif">
-                            <img class="comment_loader_tick_detox loader_tick"    hidden src="img/load_success.png">
-
-                        </div>
-                    </div>
-
-                    <br>
-                    <div class="row footer">
-                        <div class="col-xs-6 col-sm-3" align="center"><a href="#" class="btn_orange_style button button-block button-rounded button-highlight btn_footer btn_footer_chat" >                 Чат</a></div>
-                        <div class="col-xs-6 col-sm-3" align="center"><a href="#" data-toggle="modal" data-target="#modal_curator_contact" class="btn_orange_style button button-block button-rounded button-highlight btn_footer " >Куратор</a></div>
-                        <div class="col-xs-6 col-sm-3" align="center"><a href="#" class="btn_orange_style button button-block button-rounded button-highlight btn_footer nav-link-user" name="nav_user_support" >Поддержать</a></div>
-                        <div class="col-xs-6 col-sm-3" align="center"><a href="#" class="btn_orange_style button button-block button-rounded button-highlight btn_footer nav-link-user" name="nav_user_menu">Меню</a></div>
-                    </div>
-
-                    <a href="#" id="day_up" class="btn_orange_style button button-block button-rounded button-highlight btn_footer nav-link-user">День вперед!</a>
-                </div>
-
-                <div id="page_practises"  class="page_margin">
-                    <h3 align="center">Практики</h3>
-
-                    <div id="user_practises"></div>
-                </div>
-
-                <div id="page_courses" class="page_margin">
-                    <h3 align="center">
-                        Курсы
-                        <button id="btn_courses_edit" type="button" class="btn btn-default btn-xs"> <span class="glyphicon glyphicon-edit" aria-hidden="true"></span></button>
-                    </h3>
-
-                    <div id="actual_curses"></div>
-
-                    <button  type="button" class="courses_save   btn btn-success btn-block">Сохранить</button>
-
-                </div>
-
-                <div id="page_course_materials" class="page_margin">
-
-                    <button type="button" class="btn_back btn btn-default"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></button>
-
-                    <h4 id="modal_label_course_materials">Материалы курса</h4>
-
-                    <h3 align='center'>
-                        <span class="lotos_have"></span>
-                        <img src="img/lotos.png" class="lotos_style"  data-toggle="tooltip" data-placement="top" title="Лотосы - это ... . Получаются так-то" />
-                    </h3>
-
-                    <div id="materials">
-                        <div id="materials_switcher" style="display: inline"></div>
-                        <div id="materials_tables" ></div>
-                    </div>
-
-
-                </div>
-
-
-                <div id="page_settings"    class="page_margin">
-                    <div class="settings_div" >
-                        <h4>Базовые настройки</h4>
-                        <table class="table  table-hover">
-                            <tbody>
-
-                            <tr class="db_row_dialog">
-                                <td valign="middle" ><h5>Показывать рейтинг на странице дневника?</h5></td>
-                                <td class="db_row_input text-center">
-                                    <input type="checkbox"  id="field_rating_show" />
-                                    <!--
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                    -->
-                                </td>
-                                <td > <button id="btn_rating_show_save"  type="button" class="btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="meditation_settings" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Изменить базовое и целевое время медитации</h5></td>
-                                <td  class="db_row_input">
-                                    <input id="field_meditation_base_edit"   type="text" class="form-control" placeholder="База" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" value="10">
-                                    <input id="field_meditation_target_edit" type="text" class="form-control" placeholder="Цель" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" value="15">
-                                </td>
-                                <td><button id="btn_meditation_edit"  type="button" class="btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="kaoshiki_settings" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Изменить базовое и целевое время каошики</h5></td>
-                                <td  class="db_row_input">
-                                    <input id="field_kaoshiki_base_edit"   type="text" class="form-control" placeholder="База" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" value="5">
-                                    <input id="field_kaoshiki_target_edit" type="text" class="form-control" placeholder="Цель" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" value="10">
-                                </td>
-                                <td><button id="btn_kaoshiki_edit"  type="button" class="btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="water_settings" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Изменить целевое значение выпиваемой воды в сутки, мл</h5></td>
-                                <td  class="db_row_input">
-                                    <input id="field_question_water_edit" type="text" class="form-control"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
-                                </td>
-                                <td > <button id="btn_water_edit"  type="button" class="btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="wake_up_settings" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Изменить целевое время подъема</h5></td>
-                                <td  class="db_row_input">
-                                    <p>
-                                        <input type="text" class="field_wake_up" id="field_question_wake_up_hour_edit"   placeholder="чч"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
-                                        <span>:</span>
-                                        <input type="text" class="field_wake_up" id="field_question_wake_up_minute_edit" placeholder="мм"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
-                                    </p>
-                                </td>
-                                <td > <button id="btn_wake_up_edit"  type="button" class="btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="half_bath_settings" class="db_row_dialog" hidden>
-                                <td valign="middle" ><h5>Практика полуванн</h5></td>
-                                <td class="db_row_input text-center">
-
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_half_bath" />
-
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-
-                                </td>
-                                <td > <button id="btn_half_bath_edit"  type="button" class="btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="diet_settings" class="db_row_dialog" hidden>
-                                <td valign="middle" ><h5>Практика вегетарианства</h5></td>
-                                <td class="db_row_input text-center">
-
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="field_diet_settings" />
-
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-
-                                </td>
-                                <td > <button id="btn_diet_edit"  type="button" class="btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-
-                            <tr id="therapy_settings" class="db_row_dialog" hidden>
-                                <td valign="middle" ><h5>Терапии</h5></td>
-                                <td class="db_row_input text-center">
-
-                                    <div class="dropdown">
-                                        <button class="btn btn-default  btn-block  dropdown-toggle" type="button" data-toggle="dropdown" id="btn_dd_therapy_type_settings">
-                                            Выберите вариант <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#" class="link_therapy_type" name="1">Каждый день</a></li>
-                                            <li><a href="#" class="link_therapy_type" name="2">1 раз в 2 дня</a></li>
-                                            <li><a href="#" class="link_therapy_type" name="3">1 раз в 3 дня</a></li>
-                                            <li><a href="#" class="link_therapy_type" name="4">1 раз в 4 дня</a></li>
-                                            <li><a href="#" class="link_therapy_type" name="5">1 раз в 5 дней</a></li>
-                                            <li><a href="#" class="link_therapy_type" name="7">1 раз в неделю</a></li>
-                                            <li><a href="#" class="link_therapy_type" name="0">Не буду выполнять</a></li>
-                                        </ul>
-                                    </div>
-
-                                </td>
-                                <td > <button id="btn_therapy_edit"  type="button" class="btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="settings_div" id="practise_continue_settings" hidden>
-                        <h4 align="center">Зачтенные практики</h4>
-                        <h5 align="center">Вы можете отключить практику и она не будет заноситься в Ваш дневник</h5>
-                        <table class="table  table-hover">
-                            <tbody>
-
-                            <tr id="div_setting_no_snacking" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика без перекусов и перееданий</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practiс_no_snacking" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="no_snacking"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_tongue" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика чистки языка</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practic_tongue" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="tongue"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_water" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика питья воды</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practiс_water" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="water"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_half_bath" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика полуванн</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practiс_half_bath" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="half_bath"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_asana" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика выполнения асан</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practiс_asana" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="asana"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_phisic" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика выполнения физических упражнений</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practic_phisic" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="phisic"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_ahimsa" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика ахимсы</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practic_ahimsa" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="ahimsa"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_satya" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика сатьи</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practic_satya" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="satya"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_asteya" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика астеи</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practic_asteya" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="asteya"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_brahma" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика брахмачарьи</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practic_brahma" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="brahma"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_aparigraha" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика апариграхи</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practic_aparigraha" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="aparigraha"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_shaucha" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика шаучи</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practic_shaucha" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="shaucha"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_santosha" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика сантоши</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practic_santosha" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="santosha"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_tapah" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика тапах</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practic_tapah" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="tapah"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_svadhya" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика свадхья</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practic_svadhya" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="svadhya"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            <tr id="div_setting_ishvara" hidden class="db_row_dialog">
-                                <td valign="middle" ><h5>Практика ишвара пранидханы</h5></td>
-                                <td class="db_row_input text-center div_row_fact">
-                                    <div class="pretty p-default p-curve p-thick p-smooth p-bigger">
-                                        <input type="checkbox"  id="setting_practic_ishvara" />
-                                        <div class="state p-success-o">
-                                            <label></label>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td> <button name="ishvara"  type="button" class="btn_settings_practise btn btn-warning btn-block">Сохранить</button></td>
-                            </tr>
-
-                            </tbody>
-
-                        </table>
-
-                    </div>
-
-                    <div class="settings_div" id="detox_settings" hidden >
-                        <h4>Ваша текущая детокс программа: "<span id="detox_name"></span>" длительностью <span id="detox_time"></span> дней. Старт в <span id="detox_start"></span> день марафона</h4>.
-
-                        <table class="table  table-hover">
-                            <tbody>
-                            <tr id="row_quest_detox_type_edit"  class="db_row_dialog">
-                                <td class="row_detox" valign="middle"><h5>Изменить вариант детокса</h5></td>
-                                <td class="row_detox">
-                                    <div class="dropdown">
-                                        <button class="btn btn-default  btn-block  dropdown-toggle" type="button" data-toggle="dropdown" id="btn_dd_detox_type_edit">
-                                            Выберите вариант <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#" class="link_detox_type_edit" name="1">Растительная диета (без молочных продуктов)</a></li>
-                                            <li><a href="#" class="link_detox_type_edit" name="2">Фрукты, сырые и приготовленные овощи</a></li>
-                                            <li><a href="#" class="link_detox_type_edit" name="3">Фрукты</a></li>
-                                            <li><a href="#" class="link_detox_type_edit" name="4">Соки и овощные бульоны</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td > <button id="btn_detox_edit_type"  type="button" class="btn btn-warning btn-block">Сохранить</button></td>
-
-                            </tr>
-
-                            <tr id="row_quest_detox_time_edit"  class="db_row_dialog">
-                                <td valign="middle" ><h5>Изменить длительность детокса, дней</h5></td>
-                                <td  class="db_row_input">
-                                    <div class="dropdown">
-                                        <button class="btn btn-default  btn-block  dropdown-toggle" type="button" data-toggle="dropdown" id="btn_dd_detox_time_edit">
-                                            Выберите кол-во <span class="caret"></span>
-                                        </button>
-                                        <ul id="detox_answer_time_edit" class="dropdown-menu">             </ul>
-                                    </div>
-                                </td>
-                                <td > <button id="btn_detox_edit_time"  type="button" class="btn btn-warning btn-block">Сохранить</button></td>
-
-                            </tr>
-
-                            <tr id="row_quest_detox_start_edit"  class="db_row_dialog">
-                                <td valign="middle"><h5>Изменить день старта детокса</h5></td>
-                                <td  class="db_row_input">
-                                    <div class="dropdown">
-                                        <button class="btn btn-default  btn-block  dropdown-toggle" type="button" data-toggle="dropdown" id="btn_dd_detox_start_edit">
-                                            Выберите день старта <span class="caret"></span>
-                                        </button>
-                                        <ul id="detox_answer_start_edit" class="dropdown-menu">                                                    </ul>
-                                    </div>
-                                </td>
-                                <td > <button id="btn_detox_edit_start"  type="button" class="btn btn-warning btn-block">Сохранить</button></td>
-
-                            </tr>
-
-                            <tr class="db_row_dialog">
-                                <td valign="middle"><h5>Прервать детокс Программу</h5></td>
-                                <td > </td>
-                                <td > <button  data-toggle="modal" data-target="#modal_detox_stop" type="button" class="btn btn-danger btn-block">Прервать</button></td>
-
-                            </tr>
-                            </tbody>
-                        </table>
-
-                        <div class="modal fade" id="modal_detox_stop"    tabindex="-1" role="dialog" aria-labelledby="modal_label_detox_stop">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="modal_label_detox_stop">Прервать детокс</h4>
-                                    </div>
-                                    <div class="modal-body" align="center">
-                                        <h5>
-                                            Если Вы действительно хотите прервать детокс, нажимайте красную кнопку и следуйте инструкциям.<br/>
-                                            Отменить действие будет невозможно.
-                                        </h5>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
-                                        <button id="btn_detox_stop"  type="button" class="btn btn-danger">Прервать Детокс</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="div_change_pass settings_div">
-                        <h3>Смена пароля</h3>
-                        <table  class="table  table-hover">
-                            <thead>
-                            <tr class="db_row_dialog">
-                                <td><h4 align="center"><b>Параметр</b></h4></td>
-                                <td><h4 align="center"><b>Значение</b></h4></td>
-                            </tr>
-
-                            </thead>
-
-                            <tbody>
-                            <tr>
-                                <td ><h5>Старый пароль</h5></td>
-                                <td ><input type="text" class="form-control" id="password_old"></td>
-                            </tr>
-
-                            <tr>
-                                <td ><h5>Новый пароль</h5></td>
-                                <td ><input type="text" class="form-control" id="password_new"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <button id="btn_password_save"  type="button" class="btn btn-warning btn-block">Сохранить пароль</button>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
-
-
-
-<div class="modal fade" id="modal_practise_continue"     tabindex="-1" role="dialog" aria-labelledby="modal_label_practise_continue">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="modal_label_practise_continue">Продолжение практики</h4>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn_practise_continue btn btn-danger"  data-logic="false">Нет</button>
-                <button type="button" class="btn_practise_continue btn btn-success" data-logic="true">Да</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal fade" id="modal_practise_settings"     tabindex="-1" role="dialog" aria-labelledby="modal_label_practise_settings">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="modal_label_practise_settings">Настройка практики</h4>
-            </div>
-
-            <div class="modal-body" align="center">
-
-
-
-                <div id="settings_question" class="settings_practise_div" hidden>
-                    <h4 align="center">Включаем практику?</h4>
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button value="no"  type="button" class="btn btn-default settings_question">Нет</button>
-                        <button value="yes" type="button" class="btn btn-default settings_question">Да</button>
+                <div id="settings_day_count" class="settings_practise_div" hidden>
+                    <div class="header_block_wrap mt-40 mb-0">НАСТРОЙКА ЕЖЕДНЕВНОГО ОБЪЕМА</div>
+
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_times">Количество раз в день</label>
+                        <input type="text" name="count" id="field_settings_times" value="2">
                     </div>
                 </div>
 
-                <div id="settings_start_date" class="settings_practise_div div_materials" hidden>
-                    <table class="table  table-hover">
-                        <tbody>
-                        <tr class="db_row_dialog">
-                            <td valign="middle">      <p>Выберите дату с которой начнете выполнять Практику</p></td>
-                            <td > <input type="date" class="form-control" id="field_settings_start_date"></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div id="settings_wakeup" class="settings_practise_div"  hidden>
+                    <div class="header_block_wrap mt-40 mb-0">НАСТРОЙКА ВРЕМЕНИ ПОДЪЕМА</div>
 
-                </div>
-
-                <div id="settings_day_of_weeks" class="settings_practise_div div_materials" hidden>
-                    <h4 align="center">По каким дням будете выполнять практику?</h4>
-                    <div>
-                        <div class="weekDays-selector">
-
-                            <input type="checkbox" id="settings_days_1" class="weekday" />
-                            <label for="settings_days_1">Пн</label>
-                            <input type="checkbox" id="settings_days_2" class="weekday" />
-                            <label for="settings_days_2">Вт</label>
-                            <input type="checkbox" id="settings_days_3" class="weekday" />
-                            <label for="settings_days_3">Ср</label>
-                            <input type="checkbox" id="settings_days_4" class="weekday" />
-                            <label for="settings_days_4">Чт</label>
-                            <input type="checkbox" id="settings_days_5" class="weekday" />
-                            <label for="settings_days_5">Пт</label>
-                            <input type="checkbox" id="settings_days_6" class="weekday" />
-                            <label for="settings_days_6">Сб</label>
-                            <input type="checkbox" id="settings_days_7" class="weekday" />
-                            <label for="settings_days_7">Вс</label>
-                        </div>
-
+                    <div class="form_group form_group_row input_text_time not_wrap">
+                        <label for="field_settings_wakeup_now">Во сколько Вы обычно просыпаетесь?</label>
+                        <input type="text" name="time" id="field_settings_wakeup_now" class="time_drop" data-type="question_now" value="7:00">
+                    </div>
+                    <div class="form_group form_group_row input_text_time not_wrap">
+                        <label for="field_settings_wakeup_target">Установите цель по времени подъема</label>
+                        <input type="text" name="time_plan" id="field_settings_wakeup_target" class="time_drop" data-type="question_target" value="4:30">
                     </div>
 
-                    <p class="practise_settings_text">В выбранные дни будет появляться практика в дневнике. По возможности, рекомендуем делать практику каждый день
-                    В ином случае рекомендуем к такой регулярности стремиться. Для начала выберите два-три дня в неделю для практики.
-                         Можно и больше. <br> Главное делайте в назначенные дни! :)
-                    </p>
-                </div>
 
-                <div id="settings_day_count" class="settings_practise_div row div_materials" hidden>
-                    <div class="col-xs-6" align="right"><p>Кол-во раз в день (от 1 до 4)</p></div>
-                    <div class="col-xs-6">
-                        <input type="number" class="form-control" id="field_settings_times" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
-
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_wakeup_step">Установите ежедневный шаг будильника в минутах</label>
+                        <input type="text" name="count" id="field_settings_wakeup_step"   oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
                     </div>
                 </div>
 
-                <div id="settings_numbers" class="settings_practise_div div_materials" hidden>
-                    <h4 align="center">Укажите базовую информацию о практике</h4>
-                    <table class="table  table-hover">
-                        <tbody>
-                        <tr class="db_row_dialog">
-                            <td valign="middle">      <p>Базовое время практики (в минутах)?</p></td>
-                            <td > <input type="number" class="form-control" id="field_settings_numbers_start" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"></td>
-                        </tr>
-                        <tr class="db_row_dialog">
-                            <td valign="middle">      <p>Целевое время практики (в минутах)?</p></td>
-                            <td > <input type="number" class="form-control" id="field_settings_numbers_finish" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"></td>
-                        </tr>
-                        <tr class="db_row_dialog">
-                            <td valign="middle">      <p>Комфортный дневшной шаг увеличения (в минутах)?</p></td>
-                            <td > <input type="number" class="form-control" id="field_settings_numbers_step" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div id="settings_day_of_weeks" class="settings_practise_div" hidden >
+                    <div class="header_block_wrap mt-40 mb-0">ДНИ ДЛЯ ВЫПОЛНЕНИЯ ПРАКТИКИ</div>
+
+                    <div  class="form_group checkbox not_wrap">
+                        <input type="checkbox" name="every_day" id="settings_days_every_day" checked>
+                        <label for="settings_days_every_day">Практика каждый день</label>
+                    </div>
+
+                    <div class="form_group checkbox check_days not_wrap">
+                        <input type="checkbox" name="day_1" id="settings_days_1" class="weekday" checked>
+                        <label for="settings_days_1">ПН</label>
+                        <input type="checkbox" name="day_2" id="settings_days_2" class="weekday" checked>
+                        <label for="settings_days_2">ВТ</label>
+                        <input type="checkbox" name="day_3" id="settings_days_3" class="weekday" checked>
+                        <label for="settings_days_3">СР</label>
+                        <input type="checkbox" name="day_4" id="settings_days_4" class="weekday" checked>
+                        <label for="settings_days_4">ЧТ</label>
+                        <input type="checkbox" name="day_5" id="settings_days_5" class="weekday" checked>
+                        <label for="settings_days_5">ПТ</label>
+                        <input type="checkbox" name="day_6" id="settings_days_6" class="weekday" checked>
+                        <label for="settings_days_6">СБ</label>
+                        <input type="checkbox" name="day_7" id="settings_days_7" class="weekday" checked>
+                        <label for="settings_days_7">ВС</label>
+                    </div>
                 </div>
 
-                <div id="settings_water" class="settings_practise_div div_materials" hidden>
-                    <h4 align="center">Укажите базовую информацию о практике</h4>
+                <div id="settings_water" class="settings_practise_div" hidden>
+                    <div class="header_block_wrap mt-40 mb-0">НАСТРОЙКА КОЛИЧЕСТВА ВОДЫ</div>
 
-                    <table class="table  table-hover">
-                        <tbody>
-                        <tr class="db_row_dialog">
-                            <td valign="middle">      <p>Сколько воды вы выпиваете в среднем за день (в мл)?</p></td>
-                            <td > <input type="number" class="form-control" id="field_settings_water_start" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"></td>
-                        </tr>
-                        <tr class="db_row_dialog">
-                            <td valign="middle">      <p>Сколько воды вы хотите выпивать за день (в мл)?</p></td>
-                            <td > <input type="number" class="form-control" id="field_settings_water_finish" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"></td>
-                        </tr>
-                        <tr class="db_row_dialog">
-                            <td valign="middle">      <p>Комфортный шаг увеличения (в мл)?</p></td>
-                            <td > <input type="number" class="form-control" id="field_settings_water_step" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_water_start">Сколько воды вы выпиваете в среднем за день (в мл)?</label>
+                        <input type="text" name="count" id="field_settings_water_start"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                    </div>
 
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_water_finish">Сколько воды вы хотите выпивать за день (в мл)?</label>
+                        <input type="text" name="count" id="field_settings_water_finish" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                    </div>
+
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_water_step">Комфортный шаг увеличения (в мл)?</label>
+                        <input type="text" name="count" id="field_settings_water_step"   oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                    </div>
                 </div>
 
-                <div id="settings_wakeup" class="settings_practise_div div_materials" hidden>
-                    <h4 align="center">Укажите базовую информацию о практике</h4>
 
-                    <table class="table  table-hover">
-                        <tbody>
-                        <tr id="row_quest_wake_up_fact" class="db_row_dialog">
-                            <td valign="middle">      <p>Во сколько Вы обычно просыпаетесь?</p></td>
-                            <td>
-                                <p>
-                                    <input type="text" class="field_wake_up" id="field_question_wake_up_fact_hour"   oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" placeholder="чч">
-                                    <span>:</span>
-                                    <input type="text" class="field_wake_up" id="field_question_wake_up_fact_minute" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" placeholder="мм">
-                                </p>
-                            </td>
-                        </tr>
-                        <tr id="row_quest_wake_up_plan" class="db_row_dialog">
-                            <td valign="middle">      <p>Установите цель по времени подъема</p></td>
-                            <td >
-                                <p>
-                                    <input type="text" class="field_wake_up" id="field_question_wake_up_target_hour"   placeholder="чч"  value="5"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
-                                    <span>:</span>
-                                    <input type="text" class="field_wake_up" id="field_question_wake_up_target_minute" placeholder="мм"  value="30" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
-                                </p>
-                            </td>
-                        </tr>
-                        <tr id="row_quest_wake_up_step" class="db_row_dialog">
-                            <td valign="middle">      <p>Установите ежедневный шаг будильника, минут</p></td>
-                            <td >
-                                <p>
-                                    <input type="text" class="field_wake_up" id="field_question_wake_up_step"   placeholder=""  value="5"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" >
-                                </p>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-
-                <div id="settings_therapy" class="settings_practise_div div_materials" hidden>
-                    <h4 align="center">Выберите по каким дням будете выполнять практику</h4>
+                <div id="settings_therapy" class="settings_practise_div"  hidden>
+                    <div class="header_block_wrap mt-40 mb-0">ВЫБЕРИТЕ ДНИ ТЕРАПИЙ</div>
 
                     <div class="btn-group" role="group" aria-label="...">
                         <button value="1,0,1,0,1,0,0"  type="button" class="btn btn-default settings_therapy" id="settings_therapy_1">Пн, Ср, Пт</button>
                         <button value="0,1,0,1,0,1,0"  type="button" class="btn btn-default settings_therapy" id="settings_therapy_0">Вт, Чт, Сб</button>
                     </div>
+                </div>
+
+                <div id="settings_yoga_diet" class="settings_practise_div" hidden>
+                    <div class="header_block_wrap mt-40 mb-0">НАСТРОЙКА ЙОГОВСКОЙ ДИЕТЫ</div>
+
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_yoga_diet_tamas">Без тамаса</label>
+                        <input type="text" name="count" id="field_settings_yoga_diet_tamas"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                    </div>
+
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_yoga_diet_radjas">Без раджаса</label>
+                        <input type="text" name="count" id="field_settings_yoga_diet_radjas" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                    </div>
+                </div>
+
+                <div id="settings_vegetarian" class="settings_practise_div" hidden>
+                    <div class="header_block_wrap mt-40 mb-0">НАСТРОЙКА ВЕГЕТАРИАСКОЙ ДИЕТЫ<br/>КАЖДЫЙ ЭТАП ОТ 5 ДО 14 ДНЕЙ</div>
+
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_vegetarian_0">Без яиц</label>
+                        <input type="text" name="count" id="field_settings_vegetarian_0"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                    </div>
+
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_vegetarian_1">Без яиц, рыбы</label>
+                        <input type="text" name="count" id="field_settings_vegetarian_1" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                    </div>
+
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_vegetarian_2">Без яиц, рыбы и мяса</label>
+                        <input type="text" name="count" id="field_settings_vegetarian_2" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
+                    </div>
+                </div>
+
+                <div id="settings_start_date" class="settings_practise_div" hidden>
+                    <div class="header_block_wrap mt-40 mb-0">НАСТРОЙКА ДАТЫ СТАРТА</div>
+
+                    <div class="form_group form_group_row input_text not_wrap">
+                        <label for="field_settings_start_date">Выберите дату с которой начнете выполнять Практику</label>
+                        <input  type="date" class="form-control" id="field_settings_start_date" >
+                    </div>
+                </div>
+
+
+                <div id="settings_detox" hidden class="pages">
+                    <div class="header_faq">
+                        <span class="position">1</span>
+                        <span class="name">Выберите вид  и длительность детокса</span>
+                        <!-- <a href="#"  class="question"  id="tooltip_detox_type">?</a> -->
+
+                    </div>
+                    <div class="default_wrapper">
+
+                        <div class="header_block_wrap mt-30 mb-0">ВИД ДЕТОКСА</div>
+                        <div class="form_group checkbox not_wrap">
+                            <input class="cb_detox_type" checked type="checkbox" name="juice" id="on_sok">
+                            <label for="on_sok">На соках</label>
+                        </div>
+
+                        <div class="form_group checkbox not_wrap">
+                            <input class="cb_detox_type" type="checkbox" name="fruit" id="on_fruit">
+                            <label for="on_fruit">На фруктах</label>
+                        </div>
+
+                        <div class="form_group checkbox not_wrap no_border">
+                            <input class="cb_detox_type" type="checkbox" name="fruit_and_vegetables" id="fruit_and_vegetables">
+                            <label for="fruit_and_vegetables">Приготовленные овощи и фрукты</label>
+                        </div>
+
+                        <div class="form_group checkbox not_wrap">
+                            <input class="cb_detox_type" type="checkbox" name="plant" id="on_plant_food">
+                            <label for="on_plant_food">На растительной пище</label>
+                        </div>
+
+                        <div class="header_block_wrap mt-30 mb-0">ДЛИТЕЛЬНОСТЬ ДЕТОКСА</div>
+                        <div class="form_group form_group_row input_text not_wrap">
+                            <label for="detox_days">Сколько дней вы <br>планируете делать детокс?</label>
+                            <input type="text" name="count" id="detox_days" placeholder="до 5">
+                        </div>
+                    </div>
+                    <div class="header_faq">
+                        <span class="position">2</span>
+                        <span class="name">Выберите ваши пищевые привычки <br>на текущий момент жизни.</span>
+                       <!-- <a href="#" data-tooltip="#tooltip_2" class="question">?</a> -->
+                    </div>
+
+                    <div class="default_wrapper">
+                        <div class="form_group checkbox not_wrap">
+                            <input type="checkbox" name="eat" id="detox_no_snacking">
+                            <label for="detox_no_snacking">Питаюсь в меру и без перекусов</label>
+                        </div>
+                        <div class="form_group checkbox not_wrap">
+                            <input type="checkbox" name="water" id="detox_water">
+                            <label for="detox_water">Пью не менее 2 литров воды в день</label>
+                        </div>
+                        <div class="form_group checkbox not_wrap question_in">
+                            <a href="#" id="tooltip_not_meat" class="question white">?</a>
+                            <input type="checkbox" name="not_eat" id="detox_no_meat">
+                            <label for="detox_no_meat">Не ем мясо</label>
+                        </div>
+                        <div class="form_group checkbox not_wrap question_in">
+                            <a href="#" id="tooltip_yoga_diet" class="question white">?</a>
+                            <input type="checkbox" name="diet" id="detox_yoga">
+                            <label for="detox_yoga">Соблюдаю йоговскую диету</label>
+                        </div>
+                        <div class="form_group checkbox not_wrap question_in">
+                            <a href="#"  id="tooltip_not_sugar" class="question white">?</a>
+                            <input type="checkbox" name="sugar" id="detox_no_sugar">
+                            <label for="detox_no_sugar">Почти полностью не ем сахар и продукты с ним</label>
+                        </div>
+                        <div class="form_group checkbox not_wrap question_in">
+                            <a href="#"  id="tooltip_not_fries" class="question white">?</a>
+                            <input type="checkbox" name="oil" id="detox_no_fries">
+                            <label for="detox_no_fries">Почти полностью не ем пищу жаренную на масле</label>
+                        </div>
+
+                    </div>
+                    <div class="header_faq">
+                        <span class="position">3</span>
+                        <span class="name">Выберите дату старта детокса</span>
+                    </div>
+                    <div class="default_wrapper">
+                        <div class="form_group form_group_row input_text not_wrap">
+                            <label for="detox_start_date">Дата старта</label>
+                            <input type="date" name="count" id="detox_start_date" placeholder="?">
+                        </div>
+                    </div>
+
+                    <!--
+                    <div id="tooltip_1" class="tooltip">Что такое «пищевые привычки» <br><br>Индивидуальные, семейные, национальные традиции в области питания и соответствующая им приспособленность организма к отдельным пищевым продуктам, к способам приготовления и приема пищи.</div>
+                    <div id="tooltip_2" class="tooltip">Что такое «пищевые привычки» <br><br>Индивидуальные, семейные, национальные традиции в области питания и соответствующая им приспособленность организма к отдельным пищевым продуктам, к способам приготовления и приема пищи.</div>
+                    <div id="tooltip_3" class="tooltip">Что такое «пищевые привычки» <br><br>Индивидуальные, семейные, национальные традиции в области питания и соответствующая им приспособленность организма к отдельным пищевым продуктам, к способам приготовления и приема пищи.</div>
+                    <div id="tooltip_4" class="tooltip">Что такое «пищевые привычки» <br><br>Индивидуальные, семейные, национальные традиции в области питания и соответствующая им приспособленность организма к отдельным пищевым продуктам, к способам приготовления и приема пищи.</div>
+                    <div id="tooltip_5" class="tooltip">Что такое «пищевые привычки» <br><br>Индивидуальные, семейные, национальные традиции в области питания и соответствующая им приспособленность организма к отдельным пищевым продуктам, к способам приготовления и приема пищи.</div>
+                    <div id="tooltip_6" class="tooltip">Что такое «пищевые привычки» <br><br>Индивидуальные, семейные, национальные традиции в области питания и соответствующая им приспособленность организма к отдельным пищевым продуктам, к способам приготовления и приема пищи.</div>
+                    <div id="tooltip_7" class="tooltip">Что такое «пищевые привычки» <br><br>Индивидуальные, семейные, национальные традиции в области питания и соответствующая им приспособленность организма к отдельным пищевым продуктам, к способам приготовления и приема пищи.</div>
+                    -->
 
                 </div>
 
-                <div id="settings_yoga_diet" class="settings_practise_div div_materials" hidden>
-                    <h4 align="center">Укажите сколько дней вы собирается практиковать каждый из этапов перехода на йоговскую диету (но не менее 5 дней и не более 14 дней на один этап)</h4>
 
-                    <table class="table  table-hover">
-                        <tbody>
-                        <tr class="db_row_dialog">
-                            <td valign="middle">      <p>Без тамаса</p></td>
-                            <td > <input type="number" class="form-control" id="field_settings_yoga_diet_tamas" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"></td>
-                        </tr>
-                        <tr class="db_row_dialog">
-                            <td valign="middle">      <p>Без раджаса</p></td>
-                            <td > <input type="number" class="form-control" id="field_settings_yoga_diet_radjas" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <a id="btn_practise_save" href="#" class="green_btn mt-20"><span class="green_btn__text">Готово</span></a>
 
-                </div>
-                <div id="settings_vegetarian" class="settings_practise_div div_materials" hidden>
-                    <h4 align="center">Укажите сколько дней вы собирается практиковать каждый из этапов перехода на вегетарианство (но не менее 5 дней и не более 14 дней на один этап)</h4>
+            </div>
 
-                    <table class="table  table-hover">
-                        <tbody>
-                        <tr class="db_row_dialog">
-                            <td valign="middle">      <p>Без яиц</p></td>
-                            <td > <input type="number" class="form-control" id="field_settings_vegetarian_0" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"></td>
-                        </tr>
-                        <tr class="db_row_dialog">
-                            <td valign="middle">      <p>Без яиц, рыбы</p></td>
-                            <td > <input type="number" class="form-control" id="field_settings_vegetarian_1" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"></td>
-                        </tr>
-                        <tr class="db_row_dialog">
-                            <td valign="middle">      <p>Без яиц, рыбы и мяса</p></td>
-                            <td > <input type="number" class="form-control" id="field_settings_vegetarian_2" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"></td>
-                        </tr>
-                        </tbody>
-                    </table>
+        </div>
 
+
+
+
+        <div id="page_diary" class="pages"   >
+
+
+
+            <div class="header_line mb-0">
+                <div class="icon__day_navigation_left"><span class="icon-check"></span></div>
+
+                <p class="text__header_main">Дневник практик</p>
+                <div id="diary_date" class="text__header_second">
+                    4 ОКТЯБРЯ - ДЕНЬ 17
+                    <span class="icon-check"></span>
                 </div>
 
 
+                <div class="icon__day_navigation_right"><span class="icon-check"></span></div>
+
+                <!--
+                <div class="star_progress star_progress_in_header">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                -->
+            </div>
+            <div class="row">
+                <div class="progress_container col-xs-4"><div id="progress_days"></div></div>
+
+                <div class="progress_container col-xs-4"><div id="progress_progress"></div></div>
+                <div class="progress_container col-xs-4">
+                    <img src="img/kurs_3.png" style="width: 56px; height: 56px"/>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <p class="progress_title_days">5 дней</p>
+                    <p class="progress_desc">Без пропусков</p>
+                </div>
+
+                <div class="col-xs-4">
+                    <p class="progress_title_progress"></p>
+                    <p class="progress_desc">Дневника заполнено</p>
+                </div>
+                <div class="col-xs-4">
+                    <p class="progress_title_lotos"></p>
+                    <p class="progress_desc">Доступно сейчас</p>
+                </div>
             </div>
 
-            <div class="modal-footer">
-                <button data-dismiss="modal"       type="button" class="btn btn-default">Закрыть</button>
-                <button id="btn_practise_save" type="button" class="btn btn-success" data-logic="0">Сохранить</button>
+            <div class="default_wrapper">
+
+                <div id="diary_practises_1" class="wrapper_my_practice">
+                    <!--
+                    <a class="one_my_practice" href="#">
+                        <span class="one_my_practice__icon" style="background-color: #ffffff;">
+                        <span class="one_my_practice__icon-img"><img src="./img/sun-svgrepo-com.svg" alt=""></span>
+                        <span class="one_my_practice__icon-info">
+                          <span class="one_my_practice__icon-info-sticker-left">
+                            <span class="icon-check"></span>
+                            <span>06:05</span>
+                          </span>
+                          <span class="one_my_practice__icon-info-sticker-right">
+                            <span>План 6:05</span>
+                          </span>
+                        </span></span>
+                        <span class="one_my_practice__name">Подъём</span>
+                        <span class="one_my_practice__description">Завтра в 5:50</span>
+                    </a>
+                    <a class="one_my_practice" href="#">
+                          <span class="one_my_practice__icon">
+                            <span class="one_my_practice__icon-img"><img src="./img/meditation-svgrepo-com.svg" alt=""></span>
+                            <span class="one_my_practice__icon-info">
+                              <span class="one_my_practice__icon-info-sticker-left small">
+                                <span class="icon-slash"></span>
+                              </span>
+                              <span class="one_my_practice__icon-info-sticker-right">
+                                <span>План 30:00</span>
+                              </span>
+                            </span>
+                          </span>
+                          <span class="one_my_practice__name">Медитация</span>
+                          <span class="one_my_practice__description">Утро</span>
+                    </a>
+                    <a class="one_my_practice" href="#">
+          <span class="one_my_practice__icon" style="background-color: #c3cbce;">
+            <span class="one_my_practice__icon-img"><img src="./img/man-flexing-trunk-and-stretching-legs-svgrepo-com.svg" alt=""></span>
+            <span class="one_my_practice__icon-info">НАСТРОИТЬ ПРАКТИКУ</span>
+          </span>
+                        <span class="one_my_practice__name">Асаны</span>
+                        <span class="one_my_practice__description">Настроить</span>
+                    </a>
+                    -->
+                </div>
+
+                <div id="diary_read_material" class="available_materials tick_practise_cb" data-code="read_material">
+                    <div class="available_materials__img"><a href="#"><img src="./img/avatar_7.svg" alt=""></a></div>
+                    <div class="available_materials__content">
+                        <div class="available_materials__name"><a href="#">Ознакомиться с доступными <br>мне материалами</a></div>
+                        <div class="available_materials__lotos">
+                            <span id="available_materials_text">У вас есть 3 лотоса</span>
+                           <!-- <span><img src="./img/lotos_white.svg" alt=""></span> -->
+                        </div>
+                    </div>
+                    <div  id="available_materials_sticker" class="available_materials__sticker">
+                        <span class="icon-slash"></span>
+                    </div>
+                </div>
+
+
+                <div id="diary_practises_2">
+                    <!--
+
+
+                    <div class="wrapper_my_practice">
+                        <a class="one_my_practice" href="#">
+          <span class="one_my_practice__icon" style="background-color: #ffffff;">
+            <span class="one_my_practice__icon-img"><img src="./img/sun-svgrepo-com.svg" alt=""></span>
+            <span class="one_my_practice__icon-info">
+              <span class="one_my_practice__icon-info-sticker-left">
+                <span class="icon-check"></span>
+                <span>06:05</span>
+              </span>
+              <span class="one_my_practice__icon-info-sticker-right">
+                <span>План 6:05</span>
+              </span>
+            </span>
+          </span>
+                            <span class="one_my_practice__name">Подъём</span>
+                            <span class="one_my_practice__description">Завтра в 5:50</span>
+                        </a>
+                        <a class="one_my_practice" href="#">
+          <span class="one_my_practice__icon">
+            <span class="one_my_practice__icon-img"><img src="./img/meditation-svgrepo-com.svg" alt=""></span>
+            <span class="one_my_practice__icon-info">
+              <span class="one_my_practice__icon-info-sticker-left small">
+                <span class="icon-slash"></span>
+              </span>
+              <span class="one_my_practice__icon-info-sticker-right">
+                <span>План 30:00</span>
+              </span>
+            </span>
+          </span>
+                            <span class="one_my_practice__name">Медитация</span>
+                            <span class="one_my_practice__description">Утро</span>
+                        </a>
+                        <a class="one_my_practice" href="#">
+          <span class="one_my_practice__icon" style="background-color: #c3cbce;">
+            <span class="one_my_practice__icon-img"><img src="./img/man-flexing-trunk-and-stretching-legs-svgrepo-com.svg" alt=""></span>
+            <span class="one_my_practice__icon-info">НАСТРОИТЬ ПРАКТИКУ</span>
+          </span>
+                            <span class="one_my_practice__name">Асаны</span>
+                            <span class="one_my_practice__description">Настроить</span>
+                        </a>
+                    </div>
+
+                    -->
+                </div>
+
+
+                <div id="diary_detox"   class="available_materials">
+                    <div class="available_materials__img"><a href="#"><img src="./img/avatar_8.svg" alt=""></a></div>
+                    <div class="available_materials__content">
+                        <div class="available_materials__name"><a href="#">Детокс</a></div>
+                        <div class="available_materials__description">Токсины и детокс. <br>Питание без перекусов и перееданий</div>
+                        <div class="available_materials__lotos">
+                            <span>Изучите первый материал для <br>разблокировки практики</span>
+                            <span><img src="./img/open-padlock.svg" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="available_materials__sticker">
+                        <span class="icon-slash"></span>
+                    </div>
+                </div>
+                <div id="diary_comment" class="available_materials mt-30">
+                    <div class="available_materials__img"><a href="#"><img src="./img/avatar_4.svg" alt=""></a></div>
+                    <div class="available_materials__content">
+                        <div class="available_materials__name"><a href="#">Дневник</a></div>
+                        <div class="available_materials__description grey">Оставить заметку — <br>Как прошел ваш день и практики. <br>Впечатления, наблюдения, <br>спецэффекты...</div>
+                    </div>
+                    <div class="available_materials__sticker">
+                        <span class="icon-slash"></span>
+                    </div>
+                    <div class="available_materials__sticker right_bottom">
+                        <span class="icon-edit"></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="page_chat" hidden class="pages" >
+            <div class="wrapper_chat">
+                <div class="chat_img"><img src="img/chat_img.svg" alt=""></div>
+                <a href="#" class="link_to_next" >
+                    <span class="link_to_next__icon"><span class="icon-message-square"></span></span>
+                    <span class="link_to_next__text">ЧАТ С ЛИЧНЫМ <br>КУРАТОРОМ КУРСА </span>
+                    <span><img src="img/icn_arrow.svg" alt=""></span>
+                </a>
+                <a href="#" class="link_to_next" >
+                    <span class="link_to_next__icon"><span class="icon-message-square"></span></span>
+                    <span class="link_to_next__text">ОБЩИЙ ЧАТ ГРУППЫ</span>
+                    <span><img src="img/icn_arrow.svg" alt=""></span>
+                </a>
             </div>
         </div>
+
+        <div id="page_settings" hidden class="pages" >
+            <div class="wrapper_settings">
+
+                <div class="avatar">
+                    <img src="./img/avatar.png" alt="avatar">
+                    <a href="#" class="edit_profile"></a>
+                </div>
+                <div class="user_name">Роберт Земекис</div>
+
+                <a href="#" class="link_to_next" data-block="#profile_edit">
+                    <span class="link_to_next__icon"><span class="icon-user"></span></span>
+                    <span class="link_to_next__text">ПРОФИЛЬ</span>
+                    <span><img src="img/icn_arrow.svg" alt=""></span>
+                </a>
+                <div id="profile_edit" class="link_to_next_content" style="display: none">
+                    <div class="form_group">
+                        <label for="user_name">Имя</label>
+                        <input type="text" name="name" id="user_name" placeholder="Имя" value="Роберт Земекис">
+                    </div>
+                    <div class="form_group">
+                        <label for="user_email">E-mail</label>
+                        <input type="email" name="email" id="user_email" placeholder="E-mail" value="ADMIN@HYLS.COM">
+                    </div>
+                    <div class="form_group">
+                        <label for="user_password">Пароль</label>
+                        <input type="text" name="password" id="user_password" placeholder="Пароль" value="Роберт Земекис">
+                    </div>
+                    <div class="btn_wrapper">
+                        <a href="#" id="btn_update_profile" class="green_btn">
+                            <span class="green_btn__text">СОХРАНИТЬ</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="link_to_next" data-block="#list_settings_practices">
+                    <span class="link_to_next__icon"><span class="icon-settings"></span></span>
+                    <span class="link_to_next__text">Настройки практик</span>
+                    <span><img src="img/icn_arrow.svg" alt=""></span>
+                </a>
+                <div id="list_settings_practices" class="link_to_next_content" style="display: none">
+                    <div class="form_group checkbox">
+                        <input type="checkbox" name="uptime" id="uptime">
+                        <label for="uptime">Подъем, время</label>
+                        <a href="#" class="add_time"><span class="icon-settings"></span></a>
+                    </div>
+                    <div class="form_group checkbox">
+                        <input type="checkbox" name="meditation" id="meditation1">
+                        <label for="meditation1">Медитация утро</label>
+                    </div>
+                    <div class="form_group checkbox">
+                        <input type="checkbox" name="clean_yas" id="clean_yas">
+                        <label for="clean_yas">Чистка языка</label>
+                    </div>
+                    <div class="form_group checkbox">
+                        <input type="checkbox" name="exercise" id="exercise">
+                        <label for="exercise">Физические упражнения</label>
+                    </div>
+                </div>
+
+
+
+
+                <div class="btn_groups">
+                    <a href="https://hyls.ru/freedom" target="_blank" class="btn_group green">
+                        <span class="btn_group__icon"><span class="icon-check"></span></span>
+                        <span class="btn_group__text">Как участвовать? </span>
+                    </a>
+
+                    <!--
+                    <a href="#" class="btn_group green">
+                        <span class="btn_group__icon"><span class="icon-message-square"></span></span>
+                        <span class="btn_group__text">Мои достижения</span>
+                    </a>
+
+                     <a href="https://hyls.ru/freedom" target="_blank" class="btn_group gray">
+                        <span class="btn_group__icon"><span class="icon-play"></span></span>
+                        <span class="btn_group__text">перезапустить марафон</span>
+                    </a>
+                    -->
+
+
+                    <a href="https://hyls.ru/donate" target="_blank" class="btn_group red">
+                        <span class="btn_group__icon"><span class="icon-plus-circle"></span></span>
+                        <span class="btn_group__text">Поддержать проект</span>
+                    </a>
+
+                    <a href="#" class="btn_exit btn_group gray">
+                        <span class="btn_group__icon"><span class="icon-x"></span></span>
+                        <span class="btn_group__text">Выйти</span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="app_bar">
+            <a href="#" data-target="page_diary" class="btn_navigation icon_add"><img src="./img/ok.svg" alt=""></a>
+            <a href="#" data-target="page_progress" class="btn_navigation app_bar__link" id="nav_progress">
+                <span class="app_bar__link-img"><img src="./img/star.svg" alt=""></span>
+                <span class="app_bar__link-name">ПРОГРЕСС</span>
+            </a>
+            <a href="#" data-target="page_courses" class="btn_navigation app_bar__link">
+                <span class="app_bar__link-img"><img src="./img/book.svg" alt=""></span>
+                <span class="app_bar__link-name">КУРСЫ</span>
+            </a>
+            <a href="#" data-target="page_chat" class="btn_navigation app_bar__link">
+                <span class="app_bar__link-img"><img src="./img/chat.svg" alt=""></span>
+                <span class="app_bar__link-name">ЧАТ</span>
+            </a>
+            <a href="#" data-target="page_settings" class="btn_navigation app_bar__link">
+                <span class="app_bar__link-img"><img src="./img/burger.svg" alt=""></span>
+                <span class="app_bar__link-name">МЕНЮ</span>
+            </a>
+        </div>
     </div>
+
+
+
+
+
+    <div id="popup_time_dropper" class="wrapper_popup wrapper_popup_time_dropper">
+        <div class="header_popup_time_dropper">Укажите фактическое <br>время подъема сегодня</div>
+
+        <input type="text" id="input_time_dropper" />
+
+        <a href="#" class="close_popup"><span class="icon-x"></span></a>
+    </div>
+
 </div>
 
 
-<div class="modal fade" id="modal_base_info"    tabindex="-1" role="dialog" aria-labelledby="modal_label_base_info">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="modal_label_base_info">Главная информация</h4>
-            </div>
-            <div class="modal-body">
-                <p id="base_info"></p>
-            </div>
-            <div class="modal-footer">
-                <button id="btn_base_info"  type="button" class="btn btn-success">Запомнили|записали =)</button>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="modal fade" id="modal_set_ava"     tabindex="-1" role="dialog" aria-labelledby="modal_label_set_ava">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="modal_label_set_ava">Установка аватарки</h4>
-            </div>
-            <div class="modal-body" align="center">
-                <img id="load_ava"   class=" img-circle" />
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                <button id="btn_ava_set" type="button" class="btn btn-success">Сохранить аватарку</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="modal_curator_contact"    tabindex="-1" role="dialog" aria-labelledby="modal_label_curator_contact">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="modal_label_curator_contact">Контакты куратора</h4>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                <a href="#" id="btn_curactor_wa" hidden target="_blank" type="button" class="btn btn-success">WhatsApp</a>
-                <a href="#" id="btn_curactor_vk" hidden target="_blank" type="button" class="btn btn-primary">ВКонтакте</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter47972495 = new Ya.Metrika2({ id:47972495, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/47972495" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/timedropper.min.js"></script>
+<script>$( "#input_time_dropper" ).timeDropper({
+    format: 'H:mm',
+    meridians: false,
+});</script>
 
 </body>
 
