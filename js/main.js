@@ -111,7 +111,7 @@ $(document).ready(function () {
         console.log("btn_login");
        // var token_web = Base64.encode(phone + ":" + pass);
 
-        var token_web =  Base64.encode($('#login').val() + ":" + $('#password').val());
+        var token_web = Base64.encode($('#login').val() + ":" + $('#password').val());
         console.log("token_web " + token_web);
         try {
             $.ajax({
